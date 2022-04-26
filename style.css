@@ -1,0 +1,234 @@
+
+body{
+    background-color: rgb(255, 255, 255);
+    margin:0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    overflow: scroll;
+}
+
+
+h2{
+    position:absolute;
+    left:0;
+    top:200px;
+    animation: roll;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+}
+
+@keyframes roll{
+    from{
+        color: antiquewhite;
+        left:0;
+    }
+    to{
+        color:brown;
+        left:80%
+    }
+}
+.picture{
+    position:absolute;
+    left:0;
+    top:90px;
+    width: 200px;
+    height: 200px;
+    animation: imgroll;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-direction: alternate;
+    animation-delay: 1s;
+}
+@keyframes imgroll{
+    from{
+        left:0
+    }
+    to{
+        left:87%;
+        
+    }
+}
+.bobo{
+    position:absolute;
+    top:50%;
+    left:0;
+    font-size: 300px;
+    animation:strange;
+    animation-duration: 5s;
+    animation-direction:alternate;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+    color: antiquewhite;
+}
+@keyframes strange{
+    20%{
+        color: antiquewhite;
+        left:20%;
+        top:200px;
+        font-size: 300px;
+        transform:rotateZ(50deg)
+    }
+    40%{
+        color:aqua;
+        left:40;
+        transform: rotate(108deg);
+        font-size: 400px;
+    }
+    60%{
+        color:blue;
+        left:60%;
+        transform: rotate(80deg);
+        font-size: 250px;
+    }
+    80%{
+        color:coral;
+        left:80%;
+        top:250px;
+        transform: rotate(180deg);
+    }
+    100%{
+        color:lightpink;
+        left:85%
+    }
+}
+.picture1{
+    position:absolute;
+    left:0;
+    top:90px;
+    width: 200px;
+    height: 200px;
+    animation: imgroll1;
+    animation-delay: 2s;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-direction: alternate;
+}
+@keyframes imgroll1{
+    from{
+        left:0;
+        transform: rotate(0deg);
+    }
+    to{
+        left:87%;
+        transform: rotate(180deg);
+    }
+}
+.picture2{
+    position:absolute;
+    left:0;
+    top:1000px;
+    width: 200px;
+    height: 200px;
+    animation: imgroll2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-direction: alternate;
+    
+}
+@keyframes imgroll2{
+    from{
+        left:0;
+        transform: translate(0px,0px);
+    }
+    to{
+        left:87%;
+        transform: translate(1000px,1000px);
+        
+    }
+}
+
+.header{
+    height: 90px ;
+    background-image: linear-gradient(to right, #a8edea 0%, #fed6e3 100%);
+    border:0px;
+    margin:0px;
+    padding:0px;
+    left:0px;
+    top:0px;
+    position:sticky;
+    width:auto;
+}
+
+#home_img{
+    height:80px;
+    margin-left:20px;
+    margin-top: 5px;
+    position: absolute;
+    text-align: center;
+    transition-property: height,width,margin-top,magrin-left;
+    transition-duration: 0.1s;
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+    vertical-align: middle;
+    display: flex;
+}
+#home_img:hover{
+    height:90px;
+    width:90px;
+    margin-top: 0px;
+    margin-left: 15px;
+}
+
+.header_text{
+    height: auto;
+    position: absolute;
+    text-align:center;
+    vertical-align: middle;
+    margin-top: 26px;
+    width: 100px;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 26px;
+    color: #504e4e;
+    transition-property: color;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.header_text:hover{
+    color: black;
+}
+.關於我們{
+    height: 80px;
+    width: 110px;
+    position: absolute;
+    margin-left: 110px;
+    margin-right:10px;
+}
+.關於FIRST{
+    height: 80px;
+    width: 110px;
+    position: absolute;
+    margin-left: 220px;
+    margin-right:10px;
+}
+.歷屆成員{
+    height: 80px;
+    width: 110px;
+    position: absolute;
+    margin-left: 330px;
+    margin-right:10px;
+}
+.聯絡我們{
+    height: 80px;
+    width: 110px;
+    position: absolute;
+    margin-left: 440px;
+    
+}
+#cover{
+    width:100%;
+    height:310px;
+    float: right;
+    position: absolute;
+    display: block;
+    background-image: linear-gradient(180deg, #d87503 0%, #834702 30%,#000000 80%);
+    opacity: 0.8;
+    visibility:hidden;
+    border-bottom-color: rgb(102,204,255);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
