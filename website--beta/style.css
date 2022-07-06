@@ -127,6 +127,7 @@ body {
 .space{
     grid-area: space;
     background-image: linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%);
+    height : 5.625rem;
 }
 .animated_7130{
     display:flex;
@@ -289,9 +290,14 @@ body {
     background:none;
     grid-area: space4;
 }
-.menu{
+.frcmenu_txt{
+    color:hsl(0, 0%, 65%);
+    visibility: hidden;
+}
+.frcmenu_txt:hover{
     color:white;
 }
+
 .frcmenu{
     grid-area:about_frc2;
 }
