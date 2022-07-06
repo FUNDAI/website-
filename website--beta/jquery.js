@@ -90,4 +90,7 @@ $(document).ready(function(){
     $(".about_frc").mouseenter(function(){
         $(".frcmenu_txt").css("visibility","visible");
     })
+    $(".about_frc").mouseenter(function(){
+        $(".frcmenu_txt").css("visibility","hidden");
+    })
 });
