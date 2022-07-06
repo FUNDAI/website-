@@ -87,10 +87,12 @@ $(document).ready(function(){
     $(".changeeng").mouseleave(function(){
         $(".changeeng > .navbar_text").css("color","hsl(0, 0%, 65%)");
     })
+    /*
     $(".about_frc").mouseenter(function(){
         $(".frcmenu_txt").css("visibility","visible");
     })
-    $(".about_frc").mouseenter(function(){
+    $(".about_frc").mouseleave(function(){
         $(".frcmenu_txt").css("visibility","hidden");
     })
+    */
 });
