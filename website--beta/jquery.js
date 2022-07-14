@@ -97,12 +97,16 @@ $(document).ready(function(){
         $(".frcmenu_txt").css("visibility","visible");
         $(".usmenu_txt").css("visibility","hidden");
         $(".memmenu_txt").css("visibility","hidden");
+        $(".conmenu_txt").css("visibility","hidden");
+        $(".engmenu_txt").css("visibility","hidden");
     })
     $(".about_frc").mouseleave(function(){
         $(".frcmenu_txt").mouseenter(function(){
             $(".frcmenu_txt").css("visibility","visible");
             $(".usmenu_txt").css("visibility","hidden");
             $(".memmenu_txt").css("visibility","hidden");
+            $(".conmenu_txt").css("visibility","hidden");
+            $(".engmenu_txt").css("visibility","hidden");
         })
         $(".frcmenu_txt").mouseleave(function(){
             $(".frcmenu_txt").css("visibility","hidden");
@@ -113,12 +117,16 @@ $(document).ready(function(){
         $(".usmenu_txt").css("visibility","visible");
         $(".frcmenu_txt").css("visibility","hidden");
         $(".memmenu_txt").css("visibility","hidden");
+        $(".conmenu_txt").css("visibility","hidden");
+        $(".engmenu_txt").css("visibility","hidden");
     })
     $(".about_us").mouseleave(function(){
         $(".usmenu_txt").mouseenter(function(){
             $(".usmenu_txt").css("visibility","visible");
             $(".frcmenu_txt").css("visibility","hidden");
             $(".memmenu_txt").css("visibility","hidden");
+            $(".conmenu_txt").css("visibility","hidden");
+            $(".engmenu_txt").css("visibility","hidden");
         })
         $(".usmenu_txt").mouseleave(function(){
             $(".usmenu_txt").css("visibility","hidden");
@@ -128,6 +136,8 @@ $(document).ready(function(){
         $(".memmenu_txt").css("visibility","visible");
         $(".frcmenu_txt").css("visibility","hidden");
         $(".usmenu_txt").css("visibility","hidden");
+        $(".conmenu_txt").css("visibility","hidden");
+        $(".engmenu_txt").css("visibility","hidden");
     })
 
     $(".members").mouseleave(function(){
@@ -135,9 +145,53 @@ $(document).ready(function(){
             $(".memmenu_txt").css("visibility","visible");
             $(".frcmenu_txt").css("visibility","hidden");
             $(".usmenu_txt").css("visibility","hidden");
+            $(".conmenu_txt").css("visibility","hidden");
+            $(".engmenu_txt").css("visibility","hidden");
         })
         $(".memmenu_txt").mouseleave(function(){
             $(".memmenu_txt").css("visibility","hidden");
+        })
+    })
+
+    $(".contact_us").mouseenter(function(){
+        $(".conmenu_txt").css("visibility","visible");
+        $(".frcmenu_txt").css("visibility","hidden");
+        $(".usmenu_txt").css("visibility","hidden");
+        $(".memmenu_txt").css("visibility","hidden");
+        $(".engmenu_txt").css("visibility","hidden");
+    })
+
+    $(".contact_us").mouseleave(function(){
+        $(".conmenu_txt").mouseenter(function(){
+            $(".conmenu_txt").css("visibility","visible");
+            $(".frcmenu_txt").css("visibility","hidden");
+            $(".usmenu_txt").css("visibility","hidden");
+            $(".memmenu_txt").css("visibility","hidden");
+            $(".engmenu_txt").css("visibility","hidden");
+        })
+        $(".conmenu_txt").mouseleave(function(){
+            $(".conmenu_txt").css("visibility","hidden");
+        })
+    })
+
+    $(".changeeng").mouseenter(function(){
+        $(".engmenu_txt").css("visibility","visible");
+        $(".frcmenu_txt").css("visibility","hidden");
+        $(".usmenu_txt").css("visibility","hidden");
+        $(".memmenu_txt").css("visibility","hidden");
+        $(".conmenu_txt").css("visibility","hidden");
+    })
+
+    $(".changeeng").mouseleave(function(){
+        $(".engmenu_txt").mouseenter(function(){
+            $(".engmenu_txt").css("visibility","visible");
+            $(".frcmenu_txt").css("visibility","hidden");
+            $(".usmenu_txt").css("visibility","hidden");
+            $(".memmenu_txt").css("visibility","hidden");
+            $(".conmenu_txt").css("visibility","hidden");
+        })
+        $(".engmenu_txt").mouseleave(function(){
+            $(".engmenu_txt").css("visibility","hidden");
         })
     })
 });
