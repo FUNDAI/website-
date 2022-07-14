@@ -12,7 +12,7 @@ body {
     grid-template-areas: 
         "logo about_frc about_us member contact_us changeeng space animate_7130"
         "space2 about_frc2 about_us2 member2 contact_us2 changeeng2 space3 space4";
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 7fr 3fr;
+    grid-template-columns: 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 6.5fr 3fr;
     grid-template-rows: 1fr 1fr;
     width:100vw;
     margin: 0rem;
@@ -25,13 +25,13 @@ body {
 .navbar_text{
     color:hsl(0, 0%, 65%);
     font-weight: bold;
-    font-size: 20px;
+    font-size: 22px;
     margin-top:2.0625rem;
     margin-bottom:2.0625rem;
     height:auto;
     text-align: center;
     transition-property: color;
-    transition-duration: 0.5s;
+    transition-duration: 1s;
     transition-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
     cursor: pointer;
 
@@ -293,12 +293,20 @@ body {
     background:none;
     grid-area: space4;
 }
-.frcmenu_txt{
-    color:hsl(0, 0%, 0%);
+.menu_txt{
+    color:hsl(0, 2%, 62%);
     visibility: hidden;
+    display: block;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
 }
-.frcmenu_txt:hover{
-    /*color:white;*/
+.menu_txt:hover  {
+    color:white;
 }
 
 .frcmenu{
@@ -306,46 +314,52 @@ body {
     display : flex;
     flex-direction: column;
     width : auto;
+    font-size: 16px;
 }
-.menu_txt::before{
+.frcmenu_txt::before{
     content: "";
     border-left: 3px solid hsl(83, 93%, 44%);
     transform: scale(0);
     transition: transform 250ms ease-in-out;
-    padding:0px;
+    padding-left:0px;
 }
-.menu_txt:hover::before{
-    padding: 3px;
+.frcmenu_txt:hover::before{
+    padding-left: 5px;
     transform: scale(1);
 }
-.imgroll{
-    position: absolute;
-    display:flex;
-    top: 90px;
-    align-items: center;
-    justify-content: center;
-    max-height: 90vh;
-    height:auto;
-    overflow-y: hidden;
-    overflow-x: hidden;
+.usmenu{
+    grid-area:about_us2;
+    display : flex;
+    flex-direction: column;
+    width : auto;
+    font-size: 16px;
 }
-.imgroll_pic{
-    width: 100vw;
-    opacity:0.6;
-    height:inherit;
-    display: block;
-    top:90px;
+.usmenu_txt::before{
+    content: "";
+    border-left: 3px solid hsl(213, 93%, 44%);
+    transform: scale(0);
+    transition: transform 250ms ease-in-out;
+    padding-left:0px;
 }
-.rolltxt{
-    z-index: 3;
-    position: absolute;
-    font-family: "Helvetica Neue",Helvetica,Arial,"sans";
-    font-size: 90px;
-    font-weight:bold;
-    color:white;
-    text-shadow:rgba(0, 0, 0, 0.16) 0px 0px 10px, rgba(0, 0, 0, 0.16) 0px 0px 10px, rgba(0, 0, 0, 0.16) 0px 0px 10px
-    0 0 10px rgba(0, 0, 0, 0.16), 0 0 10px rgba(0, 0, 0, 0.16), 0 0 10px ;
-    -webkit-font-smoothing:antialiased;
-    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
-    background-color: rgba(80, 81, 82, 0.2);
+.usmenu_txt:hover::before{
+    padding-left: 5px;
+    transform: scale(1);
+}
+.memmenu{
+    grid-area:member2;
+    display : flex;
+    flex-direction: column;
+    width : auto;
+    font-size: 16px;
+}
+.memmenu_txt::before{
+    content: "";
+    border-left: 3px solid hsl(277, 93%, 44%);
+    transform: scale(0);
+    transition: transform 250ms ease-in-out;
+    padding-left:0px;
+}
+.mwmmenu_txt:hover::before{
+    padding-left: 5px;
+    transform: scale(1);
 }

@@ -55,7 +55,12 @@ $(document).ready(function(){
         $(".cover").css("visibility","visible");
     })
     $(".navtext").mouseleave(function(){
-        $(".cover").css("visibility","hidden");
+        $(".menu_txt").mouseenter(function(){
+            $(".cover").css("visibility","visible");
+        })
+        $(".menu_txt").mouseleave(function(){
+            $(".cover").css("visibility","hidden")
+        })
     })
     $(".about_frc").mouseenter(function(){
         $(".about_frc > .navbar_text").css("color","hsl(0, 0%,95%)");
@@ -89,10 +94,50 @@ $(document).ready(function(){
     })
     
     $(".about_frc").mouseenter(function(){
-       // $(".frcmenu_txt").css("visibility","visible");
+        $(".frcmenu_txt").css("visibility","visible");
+        $(".usmenu_txt").css("visibility","hidden");
+        $(".memmenu_txt").css("visibility","hidden");
     })
     $(".about_frc").mouseleave(function(){
-        $(".frcmenu_txt").css("visibility","hidden");
+        $(".frcmenu_txt").mouseenter(function(){
+            $(".frcmenu_txt").css("visibility","visible");
+            $(".usmenu_txt").css("visibility","hidden");
+            $(".memmenu_txt").css("visibility","hidden");
+        })
+        $(".frcmenu_txt").mouseleave(function(){
+            $(".frcmenu_txt").css("visibility","hidden");
+        })
     })
     
+    $(".about_us").mouseenter(function(){
+        $(".usmenu_txt").css("visibility","visible");
+        $(".frcmenu_txt").css("visibility","hidden");
+        $(".memmenu_txt").css("visibility","hidden");
+    })
+    $(".about_us").mouseleave(function(){
+        $(".usmenu_txt").mouseenter(function(){
+            $(".usmenu_txt").css("visibility","visible");
+            $(".frcmenu_txt").css("visibility","hidden");
+            $(".memmenu_txt").css("visibility","hidden");
+        })
+        $(".usmenu_txt").mouseleave(function(){
+            $(".usmenu_txt").css("visibility","hidden");
+        })
+    })
+    $(".members").mouseenter(function(){
+        $(".memmenu_txt").css("visibility","visible");
+        $(".frcmenu_txt").css("visibility","hidden");
+        $(".usmenu_txt").css("visibility","hidden");
+    })
+
+    $(".members").mouseleave(function(){
+        $(".memmenu_txt").mouseenter(function(){
+            $(".memmenu_txt").css("visibility","visible");
+            $(".frcmenu_txt").css("visibility","hidden");
+            $(".usmenu_txt").css("visibility","hidden");
+        })
+        $(".memmenu_txt").mouseleave(function(){
+            $(".memmenu_txt").css("visibility","hidden");
+        })
+    })
 });
