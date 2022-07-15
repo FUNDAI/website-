@@ -52,14 +52,26 @@ $(document).ready(function(){
         $(".animated_7130").fadeTo("fast",1);
     })
     $(".navtext").mouseenter(function(){
-        $(".cover").css("visibility","visible");
+        $(".cover").css("opacity","0.83");
     })
     $(".navtext").mouseleave(function(){
         $(".menu_txt").mouseenter(function(){
-            $(".cover").css("visibility","visible");
+            $(".cover").css("opacity","0.83");
         })
         $(".menu_txt").mouseleave(function(){
-            $(".cover").css("visibility","hidden")
+            $(".cover").css("opacity","0")
+        })
+        $(".space").mouseenter(function(){
+            $(".cover").css("opacity" , "0")
+        })
+        $(".logo").mouseenter(function(){
+            $(".cover").css("opacity" , "0")
+        })
+        $(".space2").mouseenter(function(){
+            $(".cover").css("opacity" , "0")
+        })
+        $(".space3").mouseenter(function(){
+            $(".cover").css("opacity" , "0")
         })
     })
     $(".about_frc").mouseenter(function(){
@@ -110,6 +122,9 @@ $(document).ready(function(){
         })
         $(".frcmenu_txt").mouseleave(function(){
             $(".frcmenu_txt").css("visibility","hidden");
+        })
+        $(".space2").mouseenter(function(){
+            $(".frcmenu_txt").css("visibility" , "hidden");
         })
     })
     
@@ -192,6 +207,12 @@ $(document).ready(function(){
         })
         $(".engmenu_txt").mouseleave(function(){
             $(".engmenu_txt").css("visibility","hidden");
+        })
+        $(".space3").mouseenter(function(){
+            $(".engmenu_txt").css("visibility" , "hidden");
+        })
+        $(".space").mouseenter(function(){
+            $(".engmenu_txt").css("visibility" , "hidden");
         })
     })
 });

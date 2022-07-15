@@ -61,9 +61,8 @@ body {
     top:0;
     z-index: 1;
     background-image: linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 29%,hsl(0, 0%, 0%) 31%);
-    opacity: 0.83;
-    visibility: hidden;
-    
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
     border-bottom-color: hsl(193,65%,70%);
     border-bottom-style: solid;
     border-bottom-width: 1px;
@@ -294,7 +293,7 @@ body {
     grid-area: space4;
 }
 .menu_txt{
-    color:hsl(0, 2%, 62%);
+    color:hsla(0, 3%, 77%, 0.699);
     visibility: hidden;
     display: block;
     padding-bottom: 3px;
@@ -319,13 +318,13 @@ body {
 .frcmenu_txt::before{
     content: "";
     border-left: 3px solid hsl(83, 93%, 44%);
-    transform: scale(0);
-    transition: transform 250ms ease-in-out;
+    opacity : 0;
+    transition: opacity 250ms ease-in-out;
     padding-left:0px;
 }
 .frcmenu_txt:hover::before{
     padding-left: 5px;
-    transform: scale(1);
+    opacity:1;
 }
 .usmenu{
     grid-area:about_us2;
@@ -337,13 +336,13 @@ body {
 .usmenu_txt::before{
     content: "";
     border-left: 3px solid hsl(213, 93%, 44%);
-    transform: scale(0);
-    transition: transform 250ms ease-in-out;
+    opacity:0;
+    transition: opacity 250ms ease-in-out;
     padding-left:0px;
 }
 .usmenu_txt:hover::before{
     padding-left: 5px;
-    transform: scale(1);
+    opacity:1;
 }
 .memmenu{
     grid-area:member2;
@@ -355,13 +354,13 @@ body {
 .memmenu_txt::before{
     content: "";
     border-left: 3px solid hsl(277, 93%, 44%);
-    transform: scale(0);
-    transition: transform 250ms ease-in-out;
+    opacity:0;
+    transition: opacity 250ms ease-in-out;
     padding-left:0px;
 }
 .memmenu_txt:hover::before{
     padding-left: 5px;
-    transform: scale(1);
+    opacity: 1;
 }
 .contactmenu{
     grid-area:contact_us2;
@@ -373,13 +372,13 @@ body {
 .conmenu_txt::before{
     content: "";
     border-left: 3px solid hsl(36, 93%, 44%);
-    transform: scale(0);
-    transition: transform 250ms ease-in-out;
+    opacity: 0;
+    transition: opacity 250ms ease-in-out;
     padding-left:0px;
 }
 .conmenu_txt:hover::before{
     padding-left: 5px;
-    transform: scale(1);
+    opacity: 1;
 }
 .engmenu{
     grid-area:changeeng2;
@@ -391,11 +390,11 @@ body {
 .engmenu_txt::before{
     content: "";
     border-left: 3px solid hsl(177, 93%, 44%);
-    transform: scale(0);
-    transition: transform 250ms ease-in-out;
+    opacity: 0;
+    transition: opacity 250ms linear;
     padding-left:0px;
 }
 .engmenu_txt:hover::before{
     padding-left: 5px;
-    transform: scale(1);
+    opacity:1;
 }
