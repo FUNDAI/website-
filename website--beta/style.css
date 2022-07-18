@@ -13,7 +13,7 @@ body {
         "logo about_frc about_us member contact_us changeeng space animate_7130"
         "space2 about_frc2 about_us2 member2 contact_us2 changeeng2 space3 space4";
     grid-template-columns: 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 6.5fr 3fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
     width:100vw;
     margin: 0rem;
     transition:background-image 0.8s ease-in-out;
@@ -397,4 +397,7 @@ body {
 .engmenu_txt:hover::before{
     padding-left: 5px;
     opacity:1;
+}
+.imgroll_pic{
+    width:100vw;
 }

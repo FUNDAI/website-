@@ -126,6 +126,9 @@ $(document).ready(function(){
         $(".space2").mouseenter(function(){
             $(".frcmenu_txt").css("visibility" , "hidden");
         })
+        $(".logo").mouseenter(function(){
+            $(".frcmenu_txt").css("visibility" , "hidden");
+        })
     })
     
     $(".about_us").mouseenter(function(){
