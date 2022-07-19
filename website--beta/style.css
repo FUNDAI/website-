@@ -399,5 +399,147 @@ body {
     opacity:1;
 }
 .imgroll_pic{
+    position: absolute;
     width:100vw;
+}
+.loop1{
+    animation: loop1 30s  infinite;
+    transform: scale(1);
+}
+.loop2{
+    animation: loop2 30s  infinite;
+    transform: scale(1);
+}
+.loop3{
+    animation: loop3 30s  infinite;
+    transform: scale(1);
+}
+.loop4{
+    animation: loop4 30s  infinite;
+    transform: scale(1);
+}
+.loop5{
+    animation: loop5 30s infinite;
+    transform: scale(1);
+}
+@keyframes loop1{
+    0%{
+        opacity:1;
+    }
+    5%{
+        transform: scale(1.2);
+    }
+    20%{
+        opacity:0;
+        transform: scale(1);
+    }
+    40%{
+        opacity:0;
+    }
+    60%{
+        opacity:0;
+    }
+    80%{
+        opacity:0;
+        
+    }
+    100%{
+        opacity:1;
+    }
+}
+@keyframes loop2{
+    0%{
+        opacity:0;
+    }
+    20%{
+        opacity:1;
+    }
+    25%{
+        transform: scale(1.2);
+    }
+    40%{
+        opacity:0;
+        transform: scale(1);
+    }
+    60%{
+        opacity:0;
+    }
+    80%{
+        opacity:0;
+    }
+    100%{
+        opacity:0;
+    }
+}
+@keyframes loop3{
+    0%{
+        opacity:0;
+    }
+    20%{
+        opacity:0;
+    }
+    40%{
+        opacity:1;  
+    }
+    45%{
+        transform: scale(1.2);
+    }
+    60%{
+        opacity:0;
+        transform: scale(1);
+    }
+    80%{
+        opacity:0;
+    }
+    100%{
+        opacity:0;
+    }
+}
+@keyframes loop4{
+    0%{
+        opacity:0;
+    }
+    20%{
+        opacity:0;
+    }
+    40%{
+        opacity:0;
+    }
+    60%{
+        opacity:1;
+    }
+    65%{
+        transform: scale(1.2);
+    }
+    80%{
+        opacity:0;
+        transform: scale(1);
+    }
+    100%{
+        opacity:0;
+    }
+}
+@keyframes loop5{
+    0%{
+        opacity:0;
+    }
+    20%{
+        opacity:0;
+    }
+    40%{
+        opacity:0;
+    }
+    60%{
+        opacity:0;
+    }
+    80%{
+        opacity:1;
+    }
+    85%{
+        transform: scale(1.2);
+    }
+    100%{
+        opacity:0;
+        transform: scale(1);
+    }
 }
