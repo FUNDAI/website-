@@ -6,6 +6,8 @@ body {
 }
 .header{
     position:relative;
+    overflow: hidden;
+    width:100vw;
 }
 #navbar{
     display:grid;
@@ -17,7 +19,7 @@ body {
     width:100vw;
     margin: 0rem;
     transition:background-image 0.8s ease-in-out;
-    z-index: 3;
+    z-index: 4;
     position: fixed;
     left: 0;
     top: 0;
@@ -59,7 +61,7 @@ body {
     position:fixed;
     left:0;
     top:0;
-    z-index: 1;
+    z-index: 2;
     background-image: linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 29%,hsl(0, 0%, 0%) 31%);
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
@@ -404,33 +406,38 @@ body {
     justify-content: center;
     flex-wrap:wrap;
     height:90vh;
+    overflow: hidden;
 }
 .imgroll_pic{
     position: absolute;
     width:100vw;
+    z-index: 0;
+    object-fit: cover;
+    
 }
 .loop1{
     animation: loop1 30s  infinite;
-    transform: scale(1);
-   
+    transform: scale(1); 
 }
 .loop2{
     animation: loop2 30s  infinite;
     transform: scale(1);
-  
+
 }
 .loop3{
     animation: loop3 30s  infinite;
     transform: scale(1);
+
 }
 .loop4{
     animation: loop4 30s  infinite;
     transform: scale(1);
+
 }
 .loop5{
     animation: loop5 30s infinite;
     transform: scale(1);
-    z-index: 1;
+
 }
 @keyframes loop1{
     0%{
@@ -568,14 +575,30 @@ body {
         transform: scale(1);
     }
 }
-.rolltxt{
-    z-index: 3;
+#rolltxt{
+    top:0px;
+    z-index: 1;
     font-size: 72px;
     display:block;
     margin:auto;
+    position:relative;
     color: rgb(255, 255, 255);
     font-weight: bold;
-    text-shadow: black 0.1em 0.1em 0.2em;
+    text-shadow: black 1px , 1px , 20px;
     font-family: Mulish, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
     text-align: center;
+    text-shadow: 0 0 10px hsl(0, 0%, 27%), 
+    0 0 20px hsl(0, 8%, 31%),
+    0 0 80px hsl(0, 8%, 31%),
+    0 0 120px hsl(0, 8%, 31%); 
+}
+
+/* header end */
+
+.content{
+    color:white;
+    width:100vw;
+    height:2000px;
+    position:relative;
+    z-index: 2;
 }

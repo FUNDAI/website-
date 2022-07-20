@@ -217,5 +217,14 @@ $(document).ready(function(){
         $(".space").mouseenter(function(){
             $(".engmenu_txt").css("visibility" , "hidden");
         })
-    })
+     })
+     $(window).scroll(function(){
+        let value = $(window).scrollTop() * 0.4;
+        console.log("value: " + value);
+        $("loop1").css("top" , value + 'px');
+        $("loop2").css("top" , value + 'px');
+        $("loop3").css("top" , value + 'px');
+        $("loop4").css("top" , value + 'px');
+        $("loop5").css("top" , value + 'px');
+     })
 });
