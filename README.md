@@ -1,2 +1,2 @@
-#HMM JUST A TRY
+# HMM JUST A TRY
 ## Code is ugly
