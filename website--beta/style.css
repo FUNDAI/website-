@@ -76,6 +76,7 @@ body {
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%);
+    transition: height 0.2s linear;
 }
 #home_logo{
     height:5rem;
@@ -95,6 +96,7 @@ body {
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%);
+    transition: height 0.2s linear;
 }
 .about_us{
     display:flex;
@@ -103,6 +105,7 @@ body {
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%);
+    transition: height 0.2s linear;
 }
 .members{
     display:flex;
@@ -111,6 +114,7 @@ body {
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%);
+    transition: height 0.2s linear;
 }
 .contact_us{
     display:flex;
@@ -119,6 +123,7 @@ body {
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%);
+    transition: height 0.2s linear;
 }
 .changeeng{
     display:flex;
@@ -127,11 +132,13 @@ body {
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%);
+    transition: height 0.2s linear;
 }
 .space{
     grid-area: space;
     background-image: linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%);
     height : 5.625rem;
+    transition: height 0.2s linear;
 }
 .animated_7130{
     display:flex;
@@ -140,6 +147,7 @@ body {
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%);
+    transition: height 0.2s linear;
 }
 .n7{
     margin-top:10px;
@@ -162,6 +170,7 @@ body {
     animation-duration:10s;
     animation-iteration-count: infinite;
     animation-timing-function:cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: font-size 0.2s linear;
 }
 .n1{
     margin-top:10px;
@@ -185,6 +194,7 @@ body {
     animation-delay: 1s;
     animation-iteration-count: infinite;
     animation-timing-function:cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: font-size 0.2s linear;
 }
 .n3{
     margin-top:10px;
@@ -208,6 +218,7 @@ body {
     animation-delay: 2s;
     animation-iteration-count: infinite;
     animation-timing-function:cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: font-size 0.2s linear;
 }
 .n0{
     margin-top:10px;
@@ -231,6 +242,7 @@ body {
     animation-delay: 7s;
     animation-iteration-count: infinite;
     animation-timing-function:cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: font-size 0.2s linear;
 }
 @keyframes shine7 {
     0%{

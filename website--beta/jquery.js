@@ -219,12 +219,50 @@ $(document).ready(function(){
         })
      })
      $(window).scroll(function(){
-        let value = $(window).scrollTop() * 0.4;
-        console.log("value: " + value);
-        $("loop1").css("top" , value + 'px');
-        $("loop2").css("top" , value + 'px');
-        $("loop3").css("top" , value + 'px');
-        $("loop4").css("top" , value + 'px');
-        $("loop5").css("top" , value + 'px');
+        var value = $(window).scrollTop() * 0.6;
+        $(".loop1").css("top" , value + 'px');
+        $(".loop2").css("top" , value + 'px');
+        $(".loop3").css("top" , value + 'px');
+        $(".loop4").css("top" , value + 'px');
+        $(".loop5").css("top" , value + 'px');
+
+        var value2 = $(window).scrollTop();
+        if(value2 >= 800){
+            $(".logo").css("height" , 3.625 +"rem");
+            $(".about_frc").css("height" , 3.625 +"rem");
+            $(".about_us").css("height" , 3.625 +"rem");
+            $(".members").css("height" , 3.625 +"rem");
+            $(".contact_us").css("height" , 3.625 +"rem");
+            $(".changeeng").css("height" , 3.625 +"rem");
+            $(".space").css("height" , 3.625 +"rem");
+            $(".animated_7130").css("height" , 3.625 +"rem");
+            $(".n7").css("font-size" , 55 +"px");
+            $(".n1").css("font-size" , 55 +"px");
+            $(".n3").css("font-size" , 55 +"px");
+            $(".n0").css("font-size" , 55 +"px");
+            $("#home_logo").css("height" , 3.5 +"rem");
+            $("#home_logo").css("width" , 3.5 +"rem");
+            $("#navbar").css("grid-template-rows", 0.8 + "fr" , 2 + "fr")
+            $(".cover").css("background-image", "linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(0, 0%, 0%) 20%)")
+        }
+        else{
+            $(".logo").css("height" , 5.625 +"rem");
+            $(".about_frc").css("height" , 5.625 +"rem");
+            $(".about_us").css("height" , 5.625 +"rem");
+            $(".members").css("height" , 5.625 +"rem");
+            $(".contact_us").css("height" , 5.625 +"rem");
+            $(".changeeng").css("height" , 5.625 +"rem");
+            $(".space").css("height" , 5.625 +"rem");
+            $(".animated_7130").css("height" , 5.625 +"rem");
+            $(".n7").css("font-size" , 70 +"px");
+            $(".n1").css("font-size" , 70 +"px");
+            $(".n3").css("font-size" ,70 +"px");
+            $(".n0").css("font-size" , 70 +"px");
+            $("#home_logo").css("height" , 5 +"rem");
+            $("#home_logo").css("width" , 5 +"rem");
+            $("#navbar").css("grid-template-rows", 1 + "fr" , 2 + "fr")
+            $(".cover").css("background-image", "linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 29%,hsl(0, 0%, 0%) 31%)")
+        }
+
      })
 });
