@@ -25,6 +25,5 @@ function changecolorback(){
 window.addEventListener("scroll",function(){
     let Parallax = document.getElementById("rolltxt");
     var value = window.scrollY;
-    console.log("value" , value);
     Parallax.style.top = value * 0.7 + "px";
 })  

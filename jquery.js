@@ -226,8 +226,9 @@ $(document).ready(function(){
         $(".loop4").css("top" , value + 'px');
         $(".loop5").css("top" , value + 'px');
 
-        var value2 = $(window).scrollTop();
-        if(value2 >= 800){
+        var origin = $(window).scrollTop();
+        console.log("orgin:"+origin);
+        if(origin >= 800){
             $(".logo").css("height" , 3.625 +"rem");
             $(".about_frc").css("height" , 3.625 +"rem");
             $(".about_us").css("height" , 3.625 +"rem");
@@ -260,9 +261,24 @@ $(document).ready(function(){
             $(".n0").css("font-size" , 70 +"px");
             $("#home_logo").css("height" , 5 +"rem");
             $("#home_logo").css("width" , 5 +"rem");
-            $("#navbar").css("grid-template-rows", 1 + "fr" , 2 + "fr")
-            $(".cover").css("background-image", "linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 29%,hsl(0, 0%, 0%) 31%)")
+            $("#navbar").css("grid-template-rows", 1 + "fr" , 2 + "fr");
+            $(".cover").css("background-image", "linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 29%,hsl(0, 0%, 0%) 31%)");
         }
 
+        var scroll_animation_value = $(window).scrollTop() * 6;
+        var gradient_percentage = 120 - origin;
+
+        $(".scroll_ani_pic").css("left" , scroll_animation_value + "px");
+        $(".scroll_ani_pic_2").css("right" , scroll_animation_value + "px");
+        if(origin > 120){
+            //$(".scroll_animation").css("background-color" , "#3db5ff");
+            //$(".scroll_animation").css("background-image" , "linear-gradient(to right,#3db5ff" + gradient_percentage + "% , hsl(0, 0%, 100%) 50% , #3db5ff" + 100 - gradient_percentage + "% )");
+            // $(".scroll_animation").css("background-image" , "linear-gradient(to right,#3db5ff 0% , hsl(0, 0%, 100%) 50% , #3db5ff 100% )");
+            $(".scroll_before").css('--defaultSize',gradient_percentage +"px");
+        }
+        else {
+            //$(".scroll_animation").css("background-color" , "white");
+            //$(".scroll_animation").css("background-image" , "none");
+        }
      })
 });

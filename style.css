@@ -596,12 +596,42 @@ body {
     
 }
 
+.scroll_animation{
+    width: 100vw;
+    z-index: 3;
+    position: absolute;
+    display:flex;
+    justify-content:space-between;
+    background-image: none ;
+    opacity: 1;
+    transition: background-image 7s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.scroll_ani_pic{
+    height: 5vh;
+    z-index: 3;
+    position: relative;
+}
+.scroll_before::before{
+    content:'';
+    height: 5vh;
+    width:var(--defaultSize);
+    background-color :hsl(0, 0%, 27%);
+    position:absolute;
+}
+.scroll_ani_pic_2{
+    height: 5vh;
+    z-index: 3;
+    position: relative;
+}
+
 /* header end */
 
 .content{
     color:white;
     width:100vw;
     height:2000px;
-    position:relative;
+    position:absolute;
     z-index: 2;
+    display:flex;
+
 }
