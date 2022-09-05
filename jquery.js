@@ -220,6 +220,9 @@ $(document).ready(function(){
      })
      $(window).scroll(function(){
         var value = $(window).scrollTop() * 0.6;
+        if(value > Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)){
+            value = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+        }
         $(".loop1").css("top" , value + 'px');
         $(".loop2").css("top" , value + 'px');
         $(".loop3").css("top" , value + 'px');
@@ -265,20 +268,23 @@ $(document).ready(function(){
             $(".cover").css("background-image", "linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 29%,hsl(0, 0%, 0%) 31%)");
         }
 
-        var scroll_animation_value = $(window).scrollTop() * 6;
-        var gradient_percentage = 120 - origin;
+        var scroll_animation_value = $(window).scrollTop() * 3;
+        if(scroll_animation_value > Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)){
+            scroll_animation_value = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+        }
 
         $(".scroll_ani_pic").css("left" , scroll_animation_value + "px");
         $(".scroll_ani_pic_2").css("right" , scroll_animation_value + "px");
-        if(origin > 120){
-            //$(".scroll_animation").css("background-color" , "#3db5ff");
-            //$(".scroll_animation").css("background-image" , "linear-gradient(to right,#3db5ff" + gradient_percentage + "% , hsl(0, 0%, 100%) 50% , #3db5ff" + 100 - gradient_percentage + "% )");
-            // $(".scroll_animation").css("background-image" , "linear-gradient(to right,#3db5ff 0% , hsl(0, 0%, 100%) 50% , #3db5ff 100% )");
-            $(".scroll_before").css('--defaultSize',gradient_percentage +"px");
-        }
-        else {
-            //$(".scroll_animation").css("background-color" , "white");
-            //$(".scroll_animation").css("background-image" , "none");
-        }
+        document.documentElement.style.setProperty("--scrollSize",scroll_animation_value+"px");
+        // if(origin > 120){
+        //     //$(".scroll_animation").css("background-color" , "#3db5ff");
+        //     //$(".scroll_animation").css("background-image" , "linear-gradient(to right,#3db5ff" + gradient_percentage + "% , hsl(0, 0%, 100%) 50% , #3db5ff" + 100 - gradient_percentage + "% )");
+        //     // $(".scroll_animation").css("background-image" , "linear-gradient(to right,#3db5ff 0% , hsl(0, 0%, 100%) 50% , #3db5ff 100% )");
+        //     //document.documentElement.style.setProperty("--scrollSize",scroll_animation_value+"px")
+        // }
+        // else {
+        //     //$(".scroll_animation").css("background-color" , "white");
+        //     //$(".scroll_animation").css("background-image" , "none");
+        // }
      })
 });
