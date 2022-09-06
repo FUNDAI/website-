@@ -231,7 +231,7 @@ $(document).ready(function(){
 
         var origin = $(window).scrollTop();
         console.log("orgin:"+origin);
-        if(origin >= 800){
+        if(origin >= window.innerHeight){
             $(".logo").css("height" , 3.625 +"rem");
             $(".about_frc").css("height" , 3.625 +"rem");
             $(".about_us").css("height" , 3.625 +"rem");

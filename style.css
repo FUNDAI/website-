@@ -428,6 +428,7 @@ body {
     width:100vw;
     z-index: 0;
     object-fit: cover;
+    transition: top 0.01s cubic-bezier(0.165, 0.84, 0.44, 1);
     
 }
 .loop1{
@@ -589,6 +590,7 @@ body {
     font-weight: bold;
     text-shadow: black 1px , 1px , 20px;
     font-family: Mulish, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    transition: top 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
     text-align: center;
     text-shadow: 0 0 10px hsl(0, 0%, 27%), 
     0 0 20px hsl(0, 8%, 31%),
