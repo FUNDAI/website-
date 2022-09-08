@@ -28,7 +28,7 @@ body {
     top: 0;
 }
 .navbar_text{
-    color:hsl(0, 0%, 65%);
+    color:hsl(0, 0%, 60%);
     font-weight: bold;
     font-size: 22px;
     margin-top:2.0625rem;
@@ -52,7 +52,7 @@ body {
 
 }
 .navbar_text:hover{
-    color:hsl(0, 0%,95%)
+    color:hsl(0, 0%, 3%);
 }
 .navbar_text:hover::after{
     padding: 3px;
@@ -65,7 +65,7 @@ body {
     left:0;
     top:0;
     z-index: 2;
-    background-image: linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 29%,hsl(0, 0%, 0%) 31%);
+    background-image: linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(0, 0%, 0%) 1%);
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
     border-bottom-color: hsl(193,65%,70%);
@@ -78,19 +78,21 @@ body {
     height : 5.625rem;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%);
-    transition: height 0.2s linear;
+    /* background-image: linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%); */
+    background-color:rgb(230, 230, 230);
+    transition: height 0.4s linear;
+    
 }
 #home_logo{
     height:5rem;
     width: 5rem;
-    background-image: url(logo.png);
+    background-image: url(logo1.png);
     background-size: contain;
     transition:transform 0.2s ease;
     cursor: pointer;
 }
 #home_logo:hover{
-    transform: scale(1.5);
+    transform: scale(1.3);
 }
 .about_frc{
     display:flex;
@@ -98,8 +100,9 @@ body {
     height:5.625rem;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%);
-    transition: height 0.2s linear;
+    /* background-image: linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%); */
+    background-color:rgb(230, 230, 230);
+    transition: height 0.4s linear,background-color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .about_us{
     display:flex;
@@ -107,8 +110,10 @@ body {
     height : 5.625rem;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%);
-    transition: height 0.2s linear;
+    /* background-image: linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%); */
+    background-color:rgb(230, 230, 230);
+    transition: height 0.4s linear,background-color 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
 }
 .members{
     display:flex;
@@ -116,8 +121,10 @@ body {
     height : 5.625rem;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%);
-    transition: height 0.2s linear;
+    /* background-image: linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%); */
+    background-color:rgb(230, 230, 230);
+    transition: height 0.4s linear,background-color 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
 }
 .contact_us{
     display:flex;
@@ -125,8 +132,10 @@ body {
     height : 5.625rem;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%);
-    transition: height 0.2s linear;
+    /* background-image: linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%); */
+    background-color:rgb(230, 230, 230);
+    transition: height 0.4s linear,background-color 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
 }
 .changeeng{
     display:flex;
@@ -134,14 +143,18 @@ body {
     height : 5.625rem;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%);
-    transition: height 0.2s linear;
+    /* background-image: linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%); */
+    background-color:rgb(230, 230, 230);
+    transition: height 0.4s linear,background-color 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
 }
 .space{
     grid-area: space;
-    background-image: linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%);
+    /* background-image: linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%); */
+    background-color:rgb(230, 230, 230);
     height : 5.625rem;
-    transition: height 0.2s linear;
+    transition: height 0.4s linear,background-color 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
 }
 .animated_7130{
     display:flex;
@@ -149,8 +162,10 @@ body {
     height : 5.625rem;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%);
-    transition: height 0.2s linear;
+    /*background-image: linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%);*/
+    background-color:rgb(230, 230, 230);
+    transition: height 0.4s linear,background-color 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
 }
 .n7{
     margin-top:10px;
@@ -415,6 +430,7 @@ body {
     padding-left: 5px;
     opacity:1;
 }
+/* loop img */
 .imgroll{
     display:flex;
     align-content: center;

@@ -1,55 +1,22 @@
 $(document).ready(function(){
+    //navbar js
     $("#home_logo").mouseenter(function(){
-        $(".logo").fadeTo("fast",0.8);
-        $(".about_frc").fadeTo("fast",0.8);
-        $(".about_us").fadeTo("fast",0.8);
-        $(".members").fadeTo("fast",0.8);
-        $(".contact_us").fadeTo("fast",0.8);
-        $(".changeeng").fadeTo("fast",0.8);
-        $(".space").fadeTo("fast",0.8);
-        $(".animated_7130").fadeTo("fast",0.8);
-        $(".logo").css("background-image","linear-gradient(to bottom, hsla(170, 65%, 50%) 0%,hsla(170, 65%, 40%) 100%)");
-        $(".about_frc").css("background-image","linear-gradient(to bottom, hsla(170, 65%, 50%) 0%,hsla(170, 65%, 40%) 100%)");
-        $(".about_us").css("background-image","linear-gradient(to bottom, hsla(170, 65%, 50%) 0%,hsla(170, 65%, 40%) 100%)");
-        $(".members").css("background-image","linear-gradient(to bottom, hsla(170, 65%, 50%) 0%,hsla(170, 65%, 40%) 100%)");
-        $(".contact_us").css("background-image","linear-gradient(to bottom, hsla(170, 65%, 50%) 0%,hsla(170, 65%, 40%) 100%)");
-        $(".changeeng").css("background-image","linear-gradient(to bottom, hsla(170, 65%, 50%) 0%,hsla(170, 65%, 40%) 100%)");
-        $(".space").css("background-image","linear-gradient(to bottom, hsla(170, 65%, 50%) 0%,hsla(170, 65%, 40%) 100%)");
-        $(".animated_7130").css("background-image","linear-gradient(to bottom, hsla(170, 65%, 50%) 0%,hsla(170, 65%, 40%) 100%)");
-        $(".logo").fadeTo("fast",1);
-        $(".about_frc").fadeTo("fast",1);
-        $(".about_us").fadeTo("fast",1);
-        $(".members").fadeTo("fast",1);
-        $(".contact_us").fadeTo("fast",1);
-        $(".changeeng").fadeTo("fast",1);
-        $(".space").fadeTo("fast",1);
-        $(".animated_7130").fadeTo("fast",1);
+        $(".about_frc").css("background-color","hsl(0, 0%, 27%)");
+        $(".about_us").css("background-color","hsl(0, 0%, 27%)");
+        $(".members").css("background-color","hsl(0, 0%, 27%)");
+        $(".contact_us").css("background-color","hsl(0, 0%, 27%)");
+        $(".changeeng").css("background-color","hsl(0, 0%, 27%)");
+        $(".space").css("background-color","hsl(0, 0%, 27%)");
+        $(".animated_7130").css("background-color","hsl(0, 0%, 27%)");
     })
-    $("#home_logo").mouseleave(function(){
-        $(".logo").fadeTo("fast",0.8);
-        $(".about_frc").fadeTo("fast",0.8);
-        $(".about_us").fadeTo("fast",0.8);
-        $(".members").fadeTo("fast",0.8);
-        $(".contact_us").fadeTo("fast",0.8);
-        $(".changeeng").fadeTo("fast",0.8);
-        $(".space").fadeTo("fast",0.8);
-        $(".animated_7130").fadeTo("fast",0.8);
-        $(".logo").css("background-image","linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%)");
-        $(".about_frc").css("background-image","linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%)");
-        $(".about_us").css("background-image","linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%)");
-        $(".members").css("background-image","linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%)");
-        $(".contact_us").css("background-image","linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%)");
-        $(".changeeng").css("background-image","linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%)");
-        $(".space").css("background-image","linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%)");
-        $(".animated_7130").css("background-image","linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%)");
-        $(".logo").fadeTo("fast",1);
-        $(".about_frc").fadeTo("fast",1);
-        $(".about_us").fadeTo("fast",1);
-        $(".members").fadeTo("fast",1);
-        $(".contact_us").fadeTo("fast",1);
-        $(".changeeng").fadeTo("fast",1);
-        $(".space").fadeTo("fast",1);
-        $(".animated_7130").fadeTo("fast",1);
+    $("#home_logo").mouseleave(function() {
+        $(".about_frc").css("background-color","rgb(230, 230, 230)");
+        $(".about_us").css("background-color","rgb(230, 230, 230)");
+        $(".members").css("background-color","rgb(230, 230, 230)");
+        $(".contact_us").css("background-color","rgb(230, 230, 230)");
+        $(".changeeng").css("background-color","rgb(230, 230, 230)");
+        $(".space").css("background-color","rgb(230, 230, 230)");
+        $(".animated_7130").css("background-color","rgb(230, 230, 230)");
     })
     $(".navtext").mouseenter(function(){
         $(".cover").css("opacity","0.9");
@@ -75,34 +42,52 @@ $(document).ready(function(){
         })
     })
     $(".about_frc").mouseenter(function(){
-        $(".about_frc > .navbar_text").css("color","hsl(0, 0%,95%)");
+        $(".about_frc > .navbar_text").css("color","hsl(0, 0%, 3%)");
     })
     $(".about_us").mouseenter(function(){
-        $(".about_us > .navbar_text").css("color","hsl(0, 0%,95%)");
+        $(".about_us > .navbar_text").css("color","hsl(0, 0%, 3%)");
     })
     $(".members").mouseenter(function(){
-        $(".members > .navbar_text").css("color","hsl(0, 0%,95%)");
+        $(".members > .navbar_text").css("color","hsl(0, 0%, 3%)");
     })
     $(".contact_us").mouseenter(function(){
-        $(".contact_us > .navbar_text").css("color","hsl(0, 0%,95%)");
+        $(".contact_us > .navbar_text").css("color","hsl(0, 0%, 3%)");
     })
     $(".changeeng").mouseenter(function(){
-        $(".changeeng > .navbar_text").css("color","hsl(0, 0%,95%)");
+        $(".changeeng > .navbar_text").css("color","hsl(0, 0%, 3%)");
     })
     $(".about_frc").mouseleave(function(){
-        $(".about_frc > .navbar_text").css("color","hsl(0, 0%, 65%)");
+        $(".about_frc > .navbar_text").css("color","hsl(0, 0%, 60%)");
     })
     $(".about_us").mouseleave(function(){
-        $(".about_us > .navbar_text").css("color","hsl(0, 0%, 65%)");
+        $(".about_us > .navbar_text").css("color","hsl(0, 0%, 60%)");
     })
     $(".members").mouseleave(function(){
-        $(".members > .navbar_text").css("color","hsl(0, 0%, 65%)");
+        $(".members > .navbar_text").css("color","hsl(0, 0%, 60%)");
     })
     $(".contact_us").mouseleave(function(){
-        $(".contact_us > .navbar_text").css("color","hsl(0, 0%, 65%)");
+        $(".contact_us > .navbar_text").css("color","hsl(0, 0%, 60%)");
     })
     $(".changeeng").mouseleave(function(){
-        $(".changeeng > .navbar_text").css("color","hsl(0, 0%, 65%)");
+        $(".changeeng > .navbar_text").css("color","hsl(0, 0%, 60%)");
+    })
+
+    $("body").mouseleave(function(){
+        $(".cover").css("opacity" , "0");   
+        $(".memmenu_txt").css("visibility","hidden");
+        $(".frcmenu_txt").css("visibility","hidden");
+        $(".usmenu_txt").css("visibility","hidden");
+        $(".conmenu_txt").css("visibility","hidden");
+        $(".engmenu_txt").css("visibility","hidden");
+    })
+
+    $(".header").mouseleave(function() {
+        $(".cover").css("opacity" , "0");   
+        $(".memmenu_txt").css("visibility","hidden");
+        $(".frcmenu_txt").css("visibility","hidden");
+        $(".usmenu_txt").css("visibility","hidden");
+        $(".conmenu_txt").css("visibility","hidden");
+        $(".engmenu_txt").css("visibility","hidden");
     })
     
     $(".about_frc").mouseenter(function(){
@@ -217,9 +202,13 @@ $(document).ready(function(){
         $(".space").mouseenter(function(){
             $(".engmenu_txt").css("visibility" , "hidden");
         })
+
+        
+
      })
      $(window).scroll(function(){
-        var value = $(window).scrollTop() * 0.6;
+        //loop pic Parallax
+        var value = $(window).scrollTop() * 0.7;
         if(value > Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)){
             value = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
         }
@@ -228,7 +217,7 @@ $(document).ready(function(){
         $(".loop3").css("top" , value + 'px');
         $(".loop4").css("top" , value + 'px');
         $(".loop5").css("top" , value + 'px');
-
+        //navbar shrink js
         var origin = $(window).scrollTop();
         console.log("orgin:"+origin);
         if(origin >= window.innerHeight){
@@ -267,12 +256,12 @@ $(document).ready(function(){
             $("#navbar").css("grid-template-rows", 1 + "fr" , 2 + "fr");
             $(".cover").css("background-image", "linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 29%,hsl(0, 0%, 0%) 31%)");
         }
-
+        //scroll animation
         var scroll_animation_value = $(window).scrollTop() * 3;
         if(scroll_animation_value > Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)){
             scroll_animation_value = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
         }
-
+        console.log(scroll_animation_value);
         $(".scroll_ani_pic").css("left" , scroll_animation_value + "px");
         $(".scroll_ani_pic_2").css("right" , scroll_animation_value + "px");
         document.documentElement.style.setProperty("--scrollSize",scroll_animation_value+"px");
