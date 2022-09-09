@@ -5,6 +5,7 @@
 body {
     margin:0rem;
     overflow-x: hidden;
+
 }
 .header{
     position:relative;
@@ -102,7 +103,7 @@ body {
     justify-content: center;
     /* background-image: linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%); */
     background-color:rgb(230, 230, 230);
-    transition: height 0.4s linear,background-color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: height 0.4s linear,background-color 1s cubic-bezier(.11,1.74,1,-1.59)
 }
 .about_us{
     display:flex;
@@ -112,7 +113,7 @@ body {
     justify-content: center;
     /* background-image: linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%); */
     background-color:rgb(230, 230, 230);
-    transition: height 0.4s linear,background-color 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: height 0.4s linear,background-color 2s cubic-bezier(.11,1.74,1,-1.59)
 
 }
 .members{
@@ -123,7 +124,7 @@ body {
     justify-content: center;
     /* background-image: linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%); */
     background-color:rgb(230, 230, 230);
-    transition: height 0.4s linear,background-color 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: height 0.4s linear,background-color 3s cubic-bezier(.11,1.74,1,-1.59)
 
 }
 .contact_us{
@@ -134,7 +135,7 @@ body {
     justify-content: center;
     /* background-image: linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%); */
     background-color:rgb(230, 230, 230);
-    transition: height 0.4s linear,background-color 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: height 0.4s linear,background-color 4s cubic-bezier(.11,1.74,1,-1.59)
 
 }
 .changeeng{
@@ -145,7 +146,7 @@ body {
     justify-content: center;
     /* background-image: linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%); */
     background-color:rgb(230, 230, 230);
-    transition: height 0.4s linear,background-color 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: height 0.4s linear,background-color 5s cubic-bezier(.11,1.74,1,-1.59)
 
 }
 .space{
@@ -153,7 +154,7 @@ body {
     /* background-image: linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%); */
     background-color:rgb(230, 230, 230);
     height : 5.625rem;
-    transition: height 0.4s linear,background-color 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: height 0.4s linear,background-color 6s cubic-bezier(.11,1.74,1,-1.59)
 
 }
 .animated_7130{
@@ -164,7 +165,7 @@ body {
     justify-content: center;
     /*background-image: linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%);*/
     background-color:rgb(230, 230, 230);
-    transition: height 0.4s linear,background-color 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: height 0.4s linear,background-color 7s cubic-bezier(.11,1.74,1,-1.59)
 
 }
 .n7{
@@ -444,7 +445,7 @@ body {
     width:100vw;
     z-index: 0;
     object-fit: cover;
-    transition: top 0.01s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: top 0.01s cubic-bezier(0,1.22,.43,.71);
     
 }
 .loop1{
@@ -606,7 +607,7 @@ body {
     font-weight: bold;
     text-shadow: black 1px , 1px , 20px;
     font-family: Mulish, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
-    transition: top 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: top 0.05s cubic-bezier(0,1.22,.43,.71);
     text-align: center;
     text-shadow: 0 0 10px hsl(0, 0%, 27%), 
     0 0 20px hsl(0, 8%, 31%),
@@ -663,8 +664,23 @@ body {
     color:white;
     width:100vw;
     height:2000px;
-    position:absolute;
+    position:relative;
     z-index: 2;
     display:flex;
+    top:5vh;
+    
+}
+.logo_container{
+    position: relative;
+    display: flex;
+    width: 100vw;
+    height: 20vh;
+    align-items: center;
+    justify-content: center;
 
+}
+.first_logo{
+    position:absolute;
+    display: block;
+    height: 20vh;
 }

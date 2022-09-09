@@ -220,7 +220,7 @@ $(document).ready(function(){
         //navbar shrink js
         var origin = $(window).scrollTop();
         console.log("orgin:"+origin);
-        if(origin >= window.innerHeight){
+        if(origin >= window.innerHeight * 0.92){
             $(".logo").css("height" , 3.625 +"rem");
             $(".about_frc").css("height" , 3.625 +"rem");
             $(".about_us").css("height" , 3.625 +"rem");
