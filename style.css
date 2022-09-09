@@ -103,7 +103,7 @@ body {
     justify-content: center;
     /* background-image: linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%); */
     background-color:rgb(230, 230, 230);
-    transition: height 0.4s linear,background-color 1s cubic-bezier(.11,1.74,1,-1.59)
+    transition: height 0.4s linear,background-color 1s cubic-bezier(.11,1.74,1,-1.59);
 }
 .about_us{
     display:flex;
@@ -113,7 +113,7 @@ body {
     justify-content: center;
     /* background-image: linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%); */
     background-color:rgb(230, 230, 230);
-    transition: height 0.4s linear,background-color 2s cubic-bezier(.11,1.74,1,-1.59)
+    transition: height 0.4s linear,background-color 2s cubic-bezier(.11,1.74,1,-1.59);
 
 }
 .members{
@@ -124,7 +124,7 @@ body {
     justify-content: center;
     /* background-image: linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%); */
     background-color:rgb(230, 230, 230);
-    transition: height 0.4s linear,background-color 3s cubic-bezier(.11,1.74,1,-1.59)
+    transition: height 0.4s linear,background-color 3s cubic-bezier(.11,1.74,1,-1.59);
 
 }
 .contact_us{
@@ -135,7 +135,7 @@ body {
     justify-content: center;
     /* background-image: linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%); */
     background-color:rgb(230, 230, 230);
-    transition: height 0.4s linear,background-color 4s cubic-bezier(.11,1.74,1,-1.59)
+    transition: height 0.4s linear,background-color 4s cubic-bezier(.11,1.74,1,-1.59);
 
 }
 .changeeng{
@@ -146,7 +146,7 @@ body {
     justify-content: center;
     /* background-image: linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%); */
     background-color:rgb(230, 230, 230);
-    transition: height 0.4s linear,background-color 5s cubic-bezier(.11,1.74,1,-1.59)
+    transition: height 0.4s linear,background-color 5s cubic-bezier(.11,1.74,1,-1.59);
 
 }
 .space{
@@ -154,7 +154,7 @@ body {
     /* background-image: linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%); */
     background-color:rgb(230, 230, 230);
     height : 5.625rem;
-    transition: height 0.4s linear,background-color 6s cubic-bezier(.11,1.74,1,-1.59)
+    transition: height 0.4s linear,background-color 6s cubic-bezier(.11,1.74,1,-1.59);
 
 }
 .animated_7130{
@@ -165,7 +165,7 @@ body {
     justify-content: center;
     /*background-image: linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 100%);*/
     background-color:rgb(230, 230, 230);
-    transition: height 0.4s linear,background-color 7s cubic-bezier(.11,1.74,1,-1.59)
+    transition: height 0.4s linear,background-color 7s cubic-bezier(.11,1.74,1,-1.59);
 
 }
 .n7{
