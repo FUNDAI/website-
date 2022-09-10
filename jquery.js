@@ -274,11 +274,17 @@ $(document).ready(function(){
             $(".first_logo").css("opacity","1");
             $(".mingdaologo").css("opacity","1");
             $(".logo7130").css("opacity","1");
+            $(".first_logo").css("padding-top", 0 + "px");
+            $(".mingdaologo").css("padding-right", 5 + "vw");
+            $(".logo7130").css("padding-left", 5 + "vw");
         }
         else{
             $(".first_logo").css("opacity","0");
             $(".mingdaologo").css("opacity","0");
             $(".logo7130").css("opacity","0");
+            $(".first_logo").css("padding-top", 20 + "vh");
+            $(".mingdaologo").css("padding-right", 50 + "vw");
+            $(".logo7130").css("padding-left", 50 + "vw");
         }
         
         
