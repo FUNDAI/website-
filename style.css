@@ -2,6 +2,9 @@
     font-size:16px;
     --scrollSize:0px;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin:0rem;
     overflow-x: hidden;
@@ -675,12 +678,35 @@ body {
     display: flex;
     width: 100vw;
     height: 20vh;
-    align-items: center;
+    align-items:stretch;
     justify-content: center;
+    padding-top: 10vh;
 
 }
 .first_logo{
-    position:absolute;
     display: block;
     height: 20vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    top:0;
+    opacity:0;
+    transition:opacity 4s cubic-bezier(0,.65,1,1);
+}
+.mingdaologo{
+    display: block;
+    height: 20vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    top:0;
+    opacity:0;
+    transition:opacity 4s cubic-bezier(0,.65,1,1); 
+}
+.logo7130{
+    display: block;
+    height: 20vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    top:0;
+    opacity:0;
+    transition:opacity 4s cubic-bezier(0,.65,1,1); 
 }

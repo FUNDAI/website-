@@ -1,5 +1,6 @@
 $(document).ready(function(){
     //navbar js
+    $("body").scrollTop(1080);
     $("#home_logo").mouseenter(function(){
         $(".about_frc").css("background-color","hsl(0, 0%, 27%)");
         $(".about_us").css("background-color","hsl(0, 0%, 27%)");
@@ -207,6 +208,10 @@ $(document).ready(function(){
 
      })
      $(window).scroll(function(){
+        //orgin scroll value
+        var origin = $(window).scrollTop();
+        var truevalue = origin + window.innerHeight;
+        console.log(truevalue);
         //loop pic Parallax
         var value = $(window).scrollTop() * 0.7;
         if(value > Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)){
@@ -218,7 +223,6 @@ $(document).ready(function(){
         $(".loop4").css("top" , value + 'px');
         $(".loop5").css("top" , value + 'px');
         //navbar shrink js
-        var origin = $(window).scrollTop();
         console.log("orgin:"+origin);
         if(origin >= window.innerHeight * 0.92){
             $(".logo").css("height" , 3.625 +"rem");
@@ -261,19 +265,22 @@ $(document).ready(function(){
         if(scroll_animation_value > Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)){
             scroll_animation_value = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
         }
-        console.log(scroll_animation_value);
         $(".scroll_ani_pic").css("left" , scroll_animation_value + "px");
         $(".scroll_ani_pic_2").css("right" , scroll_animation_value + "px");
         document.documentElement.style.setProperty("--scrollSize",scroll_animation_value+"px");
-        // if(origin > 120){
-        //     //$(".scroll_animation").css("background-color" , "#3db5ff");
-        //     //$(".scroll_animation").css("background-image" , "linear-gradient(to right,#3db5ff" + gradient_percentage + "% , hsl(0, 0%, 100%) 50% , #3db5ff" + 100 - gradient_percentage + "% )");
-        //     // $(".scroll_animation").css("background-image" , "linear-gradient(to right,#3db5ff 0% , hsl(0, 0%, 100%) 50% , #3db5ff 100% )");
-        //     //document.documentElement.style.setProperty("--scrollSize",scroll_animation_value+"px")
-        // }
-        // else {
-        //     //$(".scroll_animation").css("background-color" , "white");
-        //     //$(".scroll_animation").css("background-image" , "none");
-        // }
+
+        //logo container
+        if(truevalue > window.innerHeight * 1.05){
+            $(".first_logo").css("opacity","1");
+            $(".mingdaologo").css("opacity","1");
+            $(".logo7130").css("opacity","1");
+        }
+        else{
+            $(".first_logo").css("opacity","0");
+            $(".mingdaologo").css("opacity","0");
+            $(".logo7130").css("opacity","0");
+        }
+        
+        
      })
 });
