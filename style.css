@@ -625,6 +625,7 @@ body {
     display:flex;
     justify-content:space-between;
     background-image: none ;
+    position:absolute;
     opacity: 1;
     transition: background-image 7s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
