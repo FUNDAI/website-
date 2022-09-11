@@ -622,7 +622,6 @@ body {
 .scroll_animation{
     width: 100vw;
     z-index: 3;
-    position: absolute;
     display:flex;
     justify-content:space-between;
     background-image: none ;
@@ -677,37 +676,37 @@ body {
     position: relative;
     display: flex;
     width: 100vw;
-    height: 20vh;
+    height: 10vw;
     align-items:stretch;
     justify-content: center;
     padding-top: 10vh;
-
 }
 .first_logo{
     display: block;
-    height: 20vh;
+    height: 10vw;
     padding-left: 5vw;
     padding-right: 5vw;
     padding-top: 20vh;
     top:0;
     opacity:0;
-    transition:opacity 4.5s cubic-bezier(0,.65,1,1) , padding-top 1.5s cubic-bezier(0,.65,1,1);
+    transition:opacity 2.5s cubic-bezier(.93,.33,.83,.67) , padding-top 1.5s cubic-bezier(0,.65,1,1);
 }
 .mingdaologo{
     display: block;
-    height: 20vh;
+    height: 10vw;
     padding-left: 5vw;
     padding-right: 50vw;
     top:0;
     opacity:0;
-    transition:opacity 4.5s cubic-bezier(0,.65,1,1) , padding-right 1.5s cubic-bezier(0,.65,1,1); 
+    transition:opacity 2.5s cubic-bezier(.93,.33,.83,.67) , padding-right 1.5s cubic-bezier(0,.65,1,1); 
 }
 .logo7130{
     display: block;
-    height: 20vh;
+    height: 10vw;
     padding-left: 50vw;
     padding-right: 5vw;
     top:0;
     opacity:0;
-    transition:opacity 4.5s cubic-bezier(0,.65,1,1) , padding-left 1.5s cubic-bezier(0,.65,1,1); 
+    transition:opacity 2.5s cubic-bezier(.93,.33,.83,.67) , padding-left 1.5s cubic-bezier(0,.65,1,1); 
 }
+
