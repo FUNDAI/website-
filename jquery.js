@@ -1,6 +1,5 @@
 $(document).ready(function(){
     //navbar js
-    $("body").scrollTop(1080);
     $("#home_logo").mouseenter(function(){
         $(".about_frc").css("background-color","hsl(0, 0%, 27%)");
         $(".about_us").css("background-color","hsl(0, 0%, 27%)");
@@ -203,10 +202,17 @@ $(document).ready(function(){
         $(".space").mouseenter(function(){
             $(".engmenu_txt").css("visibility" , "hidden");
         })
-
         
-
      })
+     //content
+     $(".article_pic").mouseenter(function(){
+        $(this).css("clip-path" , "polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%)");   
+        console.log("AAAA");
+    })
+    $(".article_pic").mouseleave(function(){
+        $(this).css("clip-path" , "polygon(100% 0%,95% 50%,90% 100%,0% 100%,0% 0%)");
+    })
+
      $(window).scroll(function(){
         //orgin scroll value
         var origin = $(window).scrollTop();
