@@ -18,5 +18,5 @@ window.addEventListener("scroll",function(){
     if(value > Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)){
         value = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
     }
-    Parallax.style.top = value * 0.5 + "px";
+    Parallax.style.top = value * 0.6 + "px";
 })  

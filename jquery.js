@@ -223,11 +223,11 @@ $(document).ready(function(){
         if(value > Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)){
             value = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
         }
-        $(".loop1").css("top" , value + 'px');
-        $(".loop2").css("top" , value + 'px');
-        $(".loop3").css("top" , value + 'px');
-        $(".loop4").css("top" , value + 'px');
-        $(".loop5").css("top" , value + 'px');
+        // $(".loop1").css("top" , value + 'px');
+        // $(".loop2").css("top" , value + 'px');
+        // $(".loop3").css("top" , value + 'px');
+        // $(".loop4").css("top" , value + 'px');
+        // $(".loop5").css("top" , value + 'px');
         //navbar shrink js
         console.log("orgin:"+origin);
         if(origin >= window.innerHeight * 0.92){

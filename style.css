@@ -688,6 +688,7 @@ body {
     align-items:stretch;
     justify-content: center;
     padding-top: 10vh;
+    user-select: none;
 }
 .first_logo{
     display: block;
@@ -745,6 +746,7 @@ body {
     text-align: center;
     position: relative;
     z-index: 0;
+    font-weight: bold;
 }
 
 .mask{
