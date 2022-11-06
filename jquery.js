@@ -20,25 +20,32 @@ $(document).ready(function(){
     })
     $(".navtext").mouseenter(function(){
         $(".cover").css("opacity","0.9");
+        $(".cover").css("z-index","5");
     })
     $(".navtext").mouseleave(function(){
         $(".menu_txt").mouseenter(function(){
             $(".cover").css("opacity","0.9");
+            $(".cover").css("z-index","5");
         })
         $(".menu_txt").mouseleave(function(){
-            $(".cover").css("opacity","0")
+            $(".cover").css("opacity","0");
+            $(".cover").css("z-index","-100");
         })
         $(".space").mouseenter(function(){
-            $(".cover").css("opacity" , "0")
+            $(".cover").css("opacity" , "0");
+            $(".cover").css("z-index","-100");
         })
         $(".logo").mouseenter(function(){
-            $(".cover").css("opacity" , "0")
+            $(".cover").css("opacity" , "0");
+            $(".cover").css("z-index","-100");
         })
         $(".space2").mouseenter(function(){
-            $(".cover").css("opacity" , "0")
+            $(".cover").css("opacity" , "0");
+            $(".cover").css("z-index","-100");
         })
         $(".space3").mouseenter(function(){
-            $(".cover").css("opacity" , "0")
+            $(".cover").css("opacity" , "0");
+            $(".cover").css("z-index","-100");
         })
     })
     $(".about_frc").mouseenter(function(){
@@ -96,6 +103,7 @@ $(document).ready(function(){
         $(".memmenu_txt").css("visibility","hidden");
         $(".conmenu_txt").css("visibility","hidden");
         $(".engmenu_txt").css("visibility","hidden");
+        $(".frcmenu").css("z-index","5");
     })
     $(".about_frc").mouseleave(function(){
         $(".frcmenu_txt").mouseenter(function(){
@@ -104,15 +112,19 @@ $(document).ready(function(){
             $(".memmenu_txt").css("visibility","hidden");
             $(".conmenu_txt").css("visibility","hidden");
             $(".engmenu_txt").css("visibility","hidden");
+            $(".frcmenu").css("z-index","5");
         })
         $(".frcmenu_txt").mouseleave(function(){
             $(".frcmenu_txt").css("visibility","hidden");
+            $(".frcmenu").css("z-index","-100");
         })
         $(".space2").mouseenter(function(){
             $(".frcmenu_txt").css("visibility" , "hidden");
+            $(".frcmenu").css("z-index","-100");
         })
         $(".logo").mouseenter(function(){
             $(".frcmenu_txt").css("visibility" , "hidden");
+            $(".frcmenu").css("z-index","-100");
         })
     })
     
@@ -122,6 +134,7 @@ $(document).ready(function(){
         $(".memmenu_txt").css("visibility","hidden");
         $(".conmenu_txt").css("visibility","hidden");
         $(".engmenu_txt").css("visibility","hidden");
+        $(".usmenu").css("z-index","5");
     })
     $(".about_us").mouseleave(function(){
         $(".usmenu_txt").mouseenter(function(){
@@ -130,9 +143,11 @@ $(document).ready(function(){
             $(".memmenu_txt").css("visibility","hidden");
             $(".conmenu_txt").css("visibility","hidden");
             $(".engmenu_txt").css("visibility","hidden");
+            $(".usmenu").css("z-index","5");
         })
         $(".usmenu_txt").mouseleave(function(){
             $(".usmenu_txt").css("visibility","hidden");
+            $(".usmenu").css("z-index","-100");
         })
     })
     $(".members").mouseenter(function(){
@@ -141,6 +156,7 @@ $(document).ready(function(){
         $(".usmenu_txt").css("visibility","hidden");
         $(".conmenu_txt").css("visibility","hidden");
         $(".engmenu_txt").css("visibility","hidden");
+        $(".memmenu").css("z-index","5");
     })
 
     $(".members").mouseleave(function(){
@@ -150,9 +166,11 @@ $(document).ready(function(){
             $(".usmenu_txt").css("visibility","hidden");
             $(".conmenu_txt").css("visibility","hidden");
             $(".engmenu_txt").css("visibility","hidden");
+            $(".memmenu").css("z-index","5");
         })
         $(".memmenu_txt").mouseleave(function(){
             $(".memmenu_txt").css("visibility","hidden");
+            $(".memmenu").css("z-index","-100");
         })
     })
 
@@ -162,6 +180,7 @@ $(document).ready(function(){
         $(".usmenu_txt").css("visibility","hidden");
         $(".memmenu_txt").css("visibility","hidden");
         $(".engmenu_txt").css("visibility","hidden");
+        $(".conmenu").css("z-index","5");
     })
 
     $(".contact_us").mouseleave(function(){
@@ -171,9 +190,11 @@ $(document).ready(function(){
             $(".usmenu_txt").css("visibility","hidden");
             $(".memmenu_txt").css("visibility","hidden");
             $(".engmenu_txt").css("visibility","hidden");
+            $(".conmenu").css("z-index","5");
         })
         $(".conmenu_txt").mouseleave(function(){
             $(".conmenu_txt").css("visibility","hidden");
+            $(".conmenu").css("z-index","-100");
         })
     })
 
@@ -183,6 +204,7 @@ $(document).ready(function(){
         $(".usmenu_txt").css("visibility","hidden");
         $(".memmenu_txt").css("visibility","hidden");
         $(".conmenu_txt").css("visibility","hidden");
+        $(".engmenu").css("z-index","5");
     })
 
     $(".changeeng").mouseleave(function(){
@@ -192,18 +214,25 @@ $(document).ready(function(){
             $(".usmenu_txt").css("visibility","hidden");
             $(".memmenu_txt").css("visibility","hidden");
             $(".conmenu_txt").css("visibility","hidden");
+            $(".engmenu").css("z-index","5");
         })
         $(".engmenu_txt").mouseleave(function(){
             $(".engmenu_txt").css("visibility","hidden");
+            $(".engmenu").css("z-index","-100");
         })
         $(".space3").mouseenter(function(){
             $(".engmenu_txt").css("visibility" , "hidden");
+            $(".engmenu").css("z-index","-100");
         })
         $(".space").mouseenter(function(){
             $(".engmenu_txt").css("visibility" , "hidden");
+            $(".engmenu").css("z-index","-100");
         })
         
      })
+     var cover_layer = $('.cover').css("opacity");
+     console.log(cover_layer);
+
      //content
      $(".article_pic").mouseenter(function(){
         $(this).css("clip-path" , "polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%)");   
@@ -246,7 +275,7 @@ $(document).ready(function(){
             $("#home_logo").css("height" , 3.5 +"rem");
             $("#home_logo").css("width" , 3.5 +"rem");
             $("#navbar").css("grid-template-rows", 0.8 + "fr" , 2 + "fr")
-            $(".cover").css("background-image", "linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(0, 0%, 0%) 20%)")
+            $(".cover").css("background-image", "linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(0, 0%, 0%) 0%)")
         }
         else{
             $(".logo").css("height" , 5.625 +"rem");
@@ -264,7 +293,7 @@ $(document).ready(function(){
             $("#home_logo").css("height" , 5 +"rem");
             $("#home_logo").css("width" , 5 +"rem");
             $("#navbar").css("grid-template-rows", 1 + "fr" , 2 + "fr");
-            $(".cover").css("background-image", "linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 29%,hsl(0, 0%, 0%) 31%)");
+            $(".cover").css("background-image", "linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 0%,hsl(0, 0%, 0%) 0%)");
         }
         //scroll animation
         var scroll_animation_value = $(window).scrollTop() * 3;
