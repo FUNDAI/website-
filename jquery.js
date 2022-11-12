@@ -230,17 +230,45 @@ $(document).ready(function(){
         })
         
      })
-     var cover_layer = $('.cover').css("opacity");
-     console.log(cover_layer);
 
      //content
      $(".article_pic").mouseenter(function(){
-        $(this).css("clip-path" , "polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%)");   
-        console.log("AAAA");
+        $(this).css("clip-path" , "polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%)"); 
+        
+        
     })
     $(".article_pic").mouseleave(function(){
         $(this).css("clip-path" , "polygon(100% 0%,95% 50%,90% 100%,0% 100%,0% 0%)");
+        
+
     })
+    $(".first_article").mouseenter(function(){
+        $(".mask").css("box-shadow" , "rgb(100 100 111 / 20%) -20px 20px 29px 10px");  
+        $(".paragraph_area").css("box-shadow" , "rgb(100 100 111 / 20%) 20px 20px 29px 10px");
+    })
+    $(".first_article").mouseleave(function(){
+        $(".mask").css("box-shadow" , "rgb(100 100 111 / 20%) 0px 0px"); 
+        $(".paragraph_area").css("box-shadow" , "rgb(100 100 111 / 20%) 0px 0px ");
+    })
+    //hmm it is not working
+    // $(".paragraph_area").mouseenter(function(){
+    //     $(".paragraph_area").css("box-shadow" , "rgb(100 100 111 / 20%) 20px 20px 29px 10px");
+    // })
+    // $(".paragraph_area").mouseenter(function(){
+    //     $(".paragraph_area").css("box-shadow" , "rgb(100 100 111 / 20%) 0px 0px ");
+    // })
+    $(".lead_link").mouseenter(function(){
+        $(this).css("box-shadow" , "hsl(200, 89%, 24% , 0.4) -10px 0px 50px 2px");
+        $(".arrow").css("clip-path"," polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%)");
+        $(".arrow2").css("clip-path"," polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%)");
+
+    });
+    $(".lead_link").mouseleave(function(){
+       $(this).css("box-shadow" , "hsl(200, 89%, 24% , 0.4) 0px 0px");
+       $(".arrow").css("clip-path","polygon(0 0, 0 3% ,0 5% , 0 10% , 0 20% , 0% 100%, 100% 50%)");
+       $(".arrow2").css("clip-path"," polygon(0 0, 0 3% ,0 5% , 0 10% , 0 20% , 0% 100%, 100% 50%)");
+    });
+
 
      $(window).scroll(function(){
         //orgin scroll value
@@ -258,7 +286,6 @@ $(document).ready(function(){
         // $(".loop4").css("top" , value + 'px');
         // $(".loop5").css("top" , value + 'px');
         //navbar shrink js
-        console.log("orgin:"+origin);
         if(origin >= window.innerHeight * 0.92){
             $(".logo").css("height" , 3.625 +"rem");
             $(".about_frc").css("height" , 3.625 +"rem");
@@ -310,18 +337,38 @@ $(document).ready(function(){
             $(".mingdaologo").css("opacity","1");
             $(".logo7130").css("opacity","1");
             $(".first_logo").css("padding-top", 0 + "px");
-            $(".mingdaologo").css("padding-right", 5 + "vw");
-            $(".logo7130").css("padding-left", 5 + "vw");
+            $(".mingdaologo").css("padding-right", 8 + "vw");
+            $(".logo7130").css("padding-left", 8 + "vw");
         }
         else{
             $(".first_logo").css("opacity","0");
             $(".mingdaologo").css("opacity","0");
             $(".logo7130").css("opacity","0");
             $(".first_logo").css("padding-top", 20 + "vh");
-            $(".mingdaologo").css("padding-right", 50 + "vw");
-            $(".logo7130").css("padding-left", 50 + "vw");
+            $(".mingdaologo").css("padding-right", 30 + "vw");
+            $(".logo7130").css("padding-left", 30 + "vw");
         }
         
+        //article_first
+        if(truevalue > window.innerHeight * 1.55){
+            $(".first_article").css("right", 0 + "vw");
+            $(".article_pic").css("right", 0 + "vw");
+            $(".mask").css("right", 0 + "vw");
+            $(".article_title").css("right", 0 + "vw");
+            $(".title_background").css("right", 0 + "vw");
+            $(".first_article2").css("left", 0 + "vw");
+            $(".paragraph_area").css("left", 0 + "vw");
+        }
+        else{
+            $(".first_article").css("right", 50 + "vw");
+            $(".article_pic").css("right", 50 + "vw");
+            $(".mask").css("right", 50 + "vw");
+            $(".article_title").css("right", 170 + "vw");
+            $(".title_background").css("right", 200 + "vw");
+            $(".first_article2").css("left", 50 + "vw");
+            $(".paragraph_area").css("left", 50 + "vw");
+        }
+        console.log(window.innerHeight * 1.55);
         
      })
 });
