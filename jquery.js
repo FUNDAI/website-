@@ -234,13 +234,9 @@ $(document).ready(function(){
      //content
      $(".article_pic").mouseenter(function(){
         $(this).css("clip-path" , "polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%)"); 
-        
-        
     })
     $(".article_pic").mouseleave(function(){
         $(this).css("clip-path" , "polygon(100% 0%,95% 50%,90% 100%,0% 100%,0% 0%)");
-        
-
     })
     $(".first_article").mouseenter(function(){
         $(".mask").css("box-shadow" , "rgb(100 100 111 / 20%) -20px 20px 29px 10px");  
@@ -250,7 +246,6 @@ $(document).ready(function(){
         $(".mask").css("box-shadow" , "rgb(100 100 111 / 20%) 0px 0px"); 
         $(".paragraph_area").css("box-shadow" , "rgb(100 100 111 / 20%) 0px 0px ");
     })
-    //hmm it is not working
     $(".first_article2").mouseenter(function(){
         $(".paragraph_area").css("box-shadow" , "rgb(100 100 111 / 20%) 20px 20px 29px 10px");
         $(".mask").css("box-shadow" , "rgb(100 100 111 / 20%) -20px 20px 29px 10px");  
@@ -270,6 +265,13 @@ $(document).ready(function(){
        $(".arrow").css("clip-path","polygon(0 0, 0 3% ,0 5% , 0 10% , 0 20% , 0% 100%, 100% 50%)");
        $(".arrow2").css("clip-path"," polygon(0 0, 0 3% ,0 5% , 0 10% , 0 20% , 0% 100%, 100% 50%)");
     });
+
+    $(".article_pic2").mouseenter(function(){
+        $(this).css("clip-path" , "polygon(100% 0%, 25% 0%, 0% 50%, 25% 100%, 100% 100%)"); 
+    })
+    $(".article_pic2").mouseleave(function(){
+        $(this).css("clip-path" , "polygon(0% 0%,5% 50%,10% 100%,100% 100%,100% 0%)");
+    })
 
 
      $(window).scroll(function(){
@@ -372,7 +374,26 @@ $(document).ready(function(){
             $(".paragraph_area").css("left", 50 + "vw");
             $(".lead_link").css("opacity", 0);
         }
-        console.log(window.innerHeight * 1.55);
-        
+        console.log(window.innerHeight * 1.95);
+        if(truevalue > window.innerHeight * 2.1){
+            $(".k7130_article").css("right", 0 + "vw");
+            $(".article_pic2").css("left", 0 + "vw");
+            $(".mask2").css("left", 0 + "vw");
+            $(".article_title2").css("left", 0 + "vw");
+            $(".title_background2").css("left", 0 + "vw");
+            $(".k7130_article2").css("left", 0 + "vw");
+            $(".paragraph_area2").css("right", 0 + "vw");
+            $(".lead_link2").css("opacity", 1);
+        }
+        else{
+            $(".k7130_article").css("right", 50 + "vw");
+            $(".article_pic2").css("left", 50 + "vw");
+            $(".mask2").css("left", 50 + "vw");
+            $(".article_title2").css("left", 170 + "vw");
+            $(".title_background2").css("left", 200 + "vw");
+            $(".k7130_article2").css("left", 50 + "vw");
+            $(".paragraph_area2").css("right", 50 + "vw");
+            $(".lead_link2").css("opacity", 0);
+        }
      })
 });
