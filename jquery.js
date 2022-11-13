@@ -251,12 +251,14 @@ $(document).ready(function(){
         $(".paragraph_area").css("box-shadow" , "rgb(100 100 111 / 20%) 0px 0px ");
     })
     //hmm it is not working
-    // $(".paragraph_area").mouseenter(function(){
-    //     $(".paragraph_area").css("box-shadow" , "rgb(100 100 111 / 20%) 20px 20px 29px 10px");
-    // })
-    // $(".paragraph_area").mouseenter(function(){
-    //     $(".paragraph_area").css("box-shadow" , "rgb(100 100 111 / 20%) 0px 0px ");
-    // })
+    $(".first_article2").mouseenter(function(){
+        $(".paragraph_area").css("box-shadow" , "rgb(100 100 111 / 20%) 20px 20px 29px 10px");
+        $(".mask").css("box-shadow" , "rgb(100 100 111 / 20%) -20px 20px 29px 10px");  
+    })
+    $(".first_article2").mouseleave(function(){
+        $(".mask").css("box-shadow" , "rgb(100 100 111 / 20%) 0px 0px 0px 0px"); 
+        $(".paragraph_area").css("box-shadow" , "rgb(100 100 111 / 20%) 0px 0px ");
+    })
     $(".lead_link").mouseenter(function(){
         $(this).css("box-shadow" , "hsl(200, 89%, 24% , 0.4) -10px 0px 50px 2px");
         $(".arrow").css("clip-path"," polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%)");
@@ -358,6 +360,7 @@ $(document).ready(function(){
             $(".title_background").css("right", 0 + "vw");
             $(".first_article2").css("left", 0 + "vw");
             $(".paragraph_area").css("left", 0 + "vw");
+            $(".lead_link").css("opacity", 1);
         }
         else{
             $(".first_article").css("right", 50 + "vw");
@@ -367,6 +370,7 @@ $(document).ready(function(){
             $(".title_background").css("right", 200 + "vw");
             $(".first_article2").css("left", 50 + "vw");
             $(".paragraph_area").css("left", 50 + "vw");
+            $(".lead_link").css("opacity", 0);
         }
         console.log(window.innerHeight * 1.55);
         
