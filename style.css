@@ -451,8 +451,10 @@ body {
 .imgroll_pic{
     position: absolute;
     width:100vw;
+    height: 95vh;
     z-index: 0;
     object-fit: cover;
+    margin-top: 5.625rem;
     transition: top 0.01s cubic-bezier(0,1.22,.43,.71);
     
 }
@@ -633,6 +635,7 @@ body {
     position:absolute;
     opacity: 1;
     transition: background-image 7s cubic-bezier(0.075, 0.82, 0.165, 1);
+    overflow: hidden;
 }
 .scroll_ani_pic{
     height: 5vh;
@@ -689,6 +692,7 @@ body {
     justify-content: center;
     padding-top: 10vh;
     user-select: none;
+    overflow: hidden;
 }
 .first_logo{
     display: block;
@@ -724,16 +728,19 @@ body {
     width: 100vw;
     height: 20vw;
     padding-top: 10vw;
+    padding-bottom: 5vw;
     z-index: -2;
     justify-content: center;
     position: relative;
-    
+    overflow: hidden;
+
 }
 .first_article{
     width: 50vw;
     position: relative;
     z-index: -2;
     right : 50vw;
+    padding-bottom: 5vw;
 }
 .title_background{
     border-top-right-radius: 0.5vw;
