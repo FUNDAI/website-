@@ -339,6 +339,7 @@ body {
     transition: color;
     transition-duration: 1s;
     transition-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+    text-decoration: none;
 }
 .menu_txt:hover  {
     color:white;
