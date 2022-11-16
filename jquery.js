@@ -1,3 +1,12 @@
+window.addEventListener("scroll",function(){
+    let Parallax = document.getElementById("rolltxt");
+    var value = window.scrollY;
+    if(value > Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)){
+        value = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+    }
+    Parallax.style.top = value * 0.6 + "px";
+})  
+
 $(document).ready(function(){
     //navbar js
     $("#home_logo").mouseenter(function(){
@@ -234,10 +243,32 @@ $(document).ready(function(){
      //content
      $(".article_pic").mouseenter(function(){
         $(this).css("clip-path" , "polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%)"); 
+        $(".mask").mouseenter(function(){
+            $(".article_pic").css("clip-path" , "polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%)"); 
+        })
     })
+
+    $(".pic_link").mouseenter(function(){
+        $(".article_pic").css("clip-path" , "polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%)"); 
+        $(".mask").mouseenter(function(){
+            $(".article_pic").css("clip-path" , "polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%)"); 
+        })
+    })
+
     $(".article_pic").mouseleave(function(){
         $(this).css("clip-path" , "polygon(100% 0%,95% 50%,90% 100%,0% 100%,0% 0%)");
+        $(".mask").mouseleave(function(){
+            $(".article_pic").css("clip-path" , "polygon(100% 0%,95% 50%,90% 100%,0% 100%,0% 0%)");
+        })  
     })
+
+    $(".pic_link").mouseleave(function(){
+        $(".article_pic").css("clip-path" , "polygon(100% 0%,95% 50%,90% 100%,0% 100%,0% 0%)");
+        $(".mask").mouseleave(function(){
+            $(".article_pic").css("clip-path" , "polygon(100% 0%,95% 50%,90% 100%,0% 100%,0% 0%)");
+        })  
+    })
+
     $(".first_article").mouseenter(function(){
         $(".mask").css("box-shadow" , "rgb(100 100 111 / 20%) -20px 20px 29px 10px");  
         $(".paragraph_area").css("box-shadow" , "rgb(100 100 111 / 20%) 20px 20px 29px 10px");
@@ -258,27 +289,127 @@ $(document).ready(function(){
         $(this).css("box-shadow" , "hsl(200, 89%, 24% , 0.4) -10px 0px 50px 2px");
         $(".arrow").css("clip-path"," polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%)");
         $(".arrow2").css("clip-path"," polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%)");
-
-    });
+    })
     $(".lead_link").mouseleave(function(){
        $(this).css("box-shadow" , "hsl(200, 89%, 24% , 0.4) 0px 0px");
        $(".arrow").css("clip-path","polygon(0 0, 0 3% ,0 5% , 0 10% , 0 20% , 0% 100%, 100% 50%)");
        $(".arrow2").css("clip-path"," polygon(0 0, 0 3% ,0 5% , 0 10% , 0 20% , 0% 100%, 100% 50%)");
-    });
+    })
 
     $(".article_pic2").mouseenter(function(){
         $(this).css("clip-path" , "polygon(100% 0%, 25% 0%, 0% 50%, 25% 100%, 100% 100%)"); 
-    })
-    $(".article_pic2").mouseleave(function(){
-        $(this).css("clip-path" , "polygon(0% 0%,5% 50%,10% 100%,100% 100%,100% 0%)");
+        $(".mask2").mouseenter(function(){
+            $(".article_pic2").css("clip-path" , "polygon(100% 0%, 25% 0%, 0% 50%, 25% 100%, 100% 100%)"); 
+        })
     })
 
+    $(".pic_link2").mouseenter(function(){
+        $(".article_pic2").css("clip-path" , "polygon(100% 0%, 25% 0%, 0% 50%, 25% 100%, 100% 100%)"); 
+        $(".mask2").mouseenter(function(){
+            $(".article_pic2").css("clip-path" , "polygon(100% 0%, 25% 0%, 0% 50%, 25% 100%, 100% 100%)"); 
+        })
+    })
+    
+    $(".article_pic2").mouseleave(function(){
+        $(this).css("clip-path" , "polygon(0% 0%,5% 50%,10% 100%,100% 100%,100% 0%)");
+        $(".mask2").mouseleave(function(){
+            $(".article_pic2").css("clip-path" , "polygon(0% 0%,5% 50%,10% 100%,100% 100%,100% 0%)");
+        })  
+    })
+
+    $(".pic_link2").mouseleave(function(){
+        $(".article_pic2").css("clip-path" , "polygon(0% 0%,5% 50%,10% 100%,100% 100%,100% 0%)");
+        $(".mask2").mouseleave(function(){
+            $(".article_pic2").css("clip-path" , "polygon(0% 0%,5% 50%,10% 100%,100% 100%,100% 0%)");
+        })  
+    })
+
+    // 2
+    $(".k7130_article").mouseenter(function(){
+        $(".mask2").css("box-shadow" , "rgb(100 100 111 / 20%) 20px 20px 29px 10px");  
+        $(".paragraph_area2").css("box-shadow" , "rgb(100 100 111 / 20%) -20px 20px 29px 10px");
+    })
+    $(".k7130_article").mouseleave(function(){
+        $(".mask2").css("box-shadow" , "rgb(100 100 111 / 20%) 0px 0px"); 
+        $(".paragraph_area2").css("box-shadow" , "rgb(100 100 111 / 20%) 0px 0px ");
+    })
+    $(".k7130_article2").mouseenter(function(){
+        $(".paragraph_area2").css("box-shadow" , "rgb(100 100 111 / 20%) -20px 20px 29px 10px");
+        $(".mask2").css("box-shadow" , "rgb(100 100 111 / 20%) 20px 20px 29px 10px");  
+    })
+    $(".k7130_article2").mouseleave(function(){
+        $(".mask2").css("box-shadow" , "rgb(100 100 111 / 20%) 0px 0px 0px 0px"); 
+        $(".paragraph_area2").css("box-shadow" , "rgb(100 100 111 / 20%) 0px 0px ");
+    })
+    $(".lead_link2").mouseenter(function(){
+        $(this).css("box-shadow" , "hsl(125, 89%, 24% , 0.4) 10px 0px 50px 2px");
+        $(".arrow_2").css("clip-path"," polygon(100% 20%, 40% 20%, 40% 0%, 0% 50%, 40% 100%, 40% 80%, 100% 80%)");
+        $(".arrow2_2").css("clip-path"," polygon(100% 20%, 40% 20%, 40% 0%, 0% 50%, 40% 100%, 40% 80%, 100% 80%)");
+    })
+    $(".lead_link2").mouseleave(function(){
+       $(this).css("box-shadow" , "hsl(125, 89%, 24% , 0.4) 0px 0px");
+       $(".arrow_2").css("clip-path","polygon(100% 0, 100% 3% ,100% 5% , 100% 10% , 100% 20% , 100% 100%, 0% 50%)");
+       $(".arrow2_2").css("clip-path"," polygon(100% 0, 100% 3% ,100% 5% , 100% 10% , 100% 20% , 100% 100%, 0% 50%)");
+    })
+    // 3
+    $(".mem_article").mouseenter(function(){
+        $(".mask3").css("box-shadow" , "rgb(100 100 111 / 20%) -20px 20px 29px 10px");  
+        $(".paragraph_area3").css("box-shadow" , "rgb(100 100 111 / 20%) 20px 20px 29px 10px");
+    })
+    $(".mem_article").mouseleave(function(){
+        $(".mask3").css("box-shadow" , "rgb(100 100 111 / 20%) 0px 0px"); 
+        $(".paragraph_area3").css("box-shadow" , "rgb(100 100 111 / 20%) 0px 0px ");
+    })
+    $(".mem_article2").mouseenter(function(){
+        $(".paragraph_area3").css("box-shadow" , "rgb(100 100 111 / 20%) 20px 20px 29px 10px");
+        $(".mask3").css("box-shadow" , "rgb(100 100 111 / 20%) -20px 20px 29px 10px");  
+    })
+    $(".mem_article2").mouseleave(function(){
+        $(".mask3").css("box-shadow" , "rgb(100 100 111 / 20%) 0px 0px 0px 0px"); 
+        $(".paragraph_area3").css("box-shadow" , "rgb(100 100 111 / 20%) 0px 0px ");
+    })
+    $(".lead_link3").mouseenter(function(){
+        $(this).css("box-shadow" , "hsl(277, 89%, 24% , 0.4) -10px 0px 50px 2px");
+        $(".arrow_3").css("clip-path"," polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%)");
+        $(".arrow2_3").css("clip-path"," polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%)");
+    })
+    $(".lead_link3").mouseleave(function(){
+        $(this).css("box-shadow" , "hsl(277, 89%, 24% , 0.4) 0px 0px");
+        $(".arrow_3").css("clip-path","polygon(0 0, 0 3% ,0 5% , 0 10% , 0 20% , 0% 100%, 100% 50%)");
+        $(".arrow2_3").css("clip-path"," polygon(0 0, 0 3% ,0 5% , 0 10% , 0 20% , 0% 100%, 100% 50%)");
+     })
+    //  4
+    $(".contact_article").mouseenter(function(){
+        $(".mask4").css("box-shadow" , "rgb(100 100 111 / 20%) 20px 20px 29px 10px");  
+        $(".paragraph_area4").css("box-shadow" , "rgb(100 100 111 / 20%) -20px 20px 29px 10px");
+    })
+    $(".contact_article").mouseleave(function(){
+        $(".mask4").css("box-shadow" , "rgb(100 100 111 / 20%) 0px 0px"); 
+        $(".paragraph_area4").css("box-shadow" , "rgb(100 100 111 / 20%) 0px 0px ");
+    })
+    $(".contact_article2").mouseenter(function(){
+        $(".paragraph_area4").css("box-shadow" , "rgb(100 100 111 / 20%) -20px 20px 29px 10px");
+        $(".mask4").css("box-shadow" , "rgb(100 100 111 / 20%) 20px 20px 29px 10px");  
+    })
+    $(".contact_article2").mouseleave(function(){
+        $(".mask4").css("box-shadow" , "rgb(100 100 111 / 20%) 0px 0px 0px 0px"); 
+        $(".paragraph_area4").css("box-shadow" , "rgb(100 100 111 / 20%) 0px 0px ");
+    })
+    $(".lead_link4").mouseenter(function(){
+        $(this).css("box-shadow" , "hsl(36, 89%, 24% , 0.4) 10px 0px 50px 2px");
+        $(".arrow_4").css("clip-path"," polygon(100% 20%, 40% 20%, 40% 0%, 0% 50%, 40% 100%, 40% 80%, 100% 80%)");
+        $(".arrow2_4").css("clip-path"," polygon(100% 20%, 40% 20%, 40% 0%, 0% 50%, 40% 100%, 40% 80%, 100% 80%)");
+    })
+    $(".lead_link4").mouseleave(function(){
+       $(this).css("box-shadow" , "hsl(36, 89%, 24% , 0.4) 0px 0px");
+       $(".arrow_4").css("clip-path","polygon(100% 0, 100% 3% ,100% 5% , 100% 10% , 100% 20% , 100% 100%, 0% 50%)");
+       $(".arrow2_4").css("clip-path"," polygon(100% 0, 100% 3% ,100% 5% , 100% 10% , 100% 20% , 100% 100%, 0% 50%)");
+    })
 
      $(window).scroll(function(){
         //orgin scroll value
         var origin = $(window).scrollTop();
         var truevalue = origin + window.innerHeight;
-        console.log(truevalue);
         //loop pic Parallax
         var value = $(window).scrollTop() * 0.7;
         if(value > Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)){
@@ -327,7 +458,7 @@ $(document).ready(function(){
             $(".cover").css("background-image", "linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 0%,hsl(0, 0%, 0%) 0%)");
         }
         //scroll animation
-        var scroll_animation_value = $(window).scrollTop() * 3;
+        var scroll_animation_value = $(window).scrollTop()*1.5;
         if(scroll_animation_value > Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)){
             scroll_animation_value = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
         }
@@ -374,7 +505,6 @@ $(document).ready(function(){
             $(".paragraph_area").css("left", 50 + "vw");
             $(".lead_link").css("opacity", 0);
         }
-        console.log(window.innerHeight * 1.95);
         if(truevalue > window.innerHeight * 2.1){
             $(".k7130_article").css("right", 0 + "vw");
             $(".article_pic2").css("left", 0 + "vw");
@@ -395,5 +525,46 @@ $(document).ready(function(){
             $(".paragraph_area2").css("right", 50 + "vw");
             $(".lead_link2").css("opacity", 0);
         }
+        if(truevalue > window.innerHeight * 2.65){
+            $(".mem_article").css("right", 0 + "vw");
+            $(".article_pic3").css("right", 0 + "vw");
+            $(".mask3").css("right", 0 + "vw");
+            $(".article_title3").css("right", 0 + "vw");
+            $(".title_background3").css("right", 0 + "vw");
+            $(".mem_article2").css("left", 0 + "vw");
+            $(".paragraph_area3").css("left", 0 + "vw");
+            $(".lead_link3").css("opacity", 1);
+        }
+        else{
+            $(".mem_article3").css("right", 50 + "vw");
+            $(".article_pic3").css("right", 50 + "vw");
+            $(".mask3").css("right", 50 + "vw");
+            $(".article_title3").css("right", 170 + "vw");
+            $(".title_background3").css("right", 200 + "vw");
+            $(".mem_article2").css("left", 50 + "vw");
+            $(".paragraph_area3").css("left", 50 + "vw");
+            $(".lead_link3").css("opacity", 0);
+        }
+        if(truevalue > window.innerHeight * 3.2){
+            $(".contact_article").css("right", 0 + "vw");
+            $(".article_pic4").css("left", 0 + "vw");
+            $(".mask4").css("left", 0 + "vw");
+            $(".article_title4").css("left", 0 + "vw");
+            $(".title_background4").css("left", 0 + "vw");
+            $(".contact_article2").css("left", 0 + "vw");
+            $(".paragraph_area4").css("right", 0 + "vw");
+            $(".lead_link4").css("opacity", 1);
+        }
+        else{
+            $(".contact_article").css("right", 50 + "vw");
+            $(".article_pic4").css("left", 50 + "vw");
+            $(".mask4").css("left", 50 + "vw");
+            $(".article_title4").css("left", 170 + "vw");
+            $(".title_background4").css("left", 200 + "vw");
+            $(".contact_article2").css("left", 50 + "vw");
+            $(".paragraph_area4").css("right", 50 + "vw");
+            $(".lead_link4").css("opacity", 0);
+        }
+        
      })
 });
