@@ -28,33 +28,26 @@ $(document).ready(function(){
         $(".animated_7130").css("background-color","rgb(230, 230, 230)");
     })
     $(".navtext").mouseenter(function(){
-        $(".cover").css("opacity","0.9");
-        $(".cover").css("z-index","5");
+        $(".cover").css("opacity","0.9").css("z-index","5");
     })
     $(".navtext").mouseleave(function(){
         $(".menu_txt").mouseenter(function(){
-            $(".cover").css("opacity","0.9");
-            $(".cover").css("z-index","5");
+            $(".cover").css("opacity","0.9").css("z-index","5");
         })
         $(".menu_txt").mouseleave(function(){
-            $(".cover").css("opacity","0");
-            $(".cover").css("z-index","-100");
+            $(".cover").css("opacity","0").css("z-index","-100");
         })
         $(".space").mouseenter(function(){
-            $(".cover").css("opacity" , "0");
-            $(".cover").css("z-index","-100");
+            $(".cover").css("opacity" , "0").css("z-index","-100");
         })
         $(".logo").mouseenter(function(){
-            $(".cover").css("opacity" , "0");
-            $(".cover").css("z-index","-100");
+            $(".cover").css("opacity" , "0").css("z-index","-100");
         })
         $(".space2").mouseenter(function(){
-            $(".cover").css("opacity" , "0");
-            $(".cover").css("z-index","-100");
+            $(".cover").css("opacity" , "0").css("z-index","-100");
         })
         $(".space3").mouseenter(function(){
-            $(".cover").css("opacity" , "0");
-            $(".cover").css("z-index","-100");
+            $(".cover").css("opacity" , "0").css("z-index","-100");
         })
     })
     $(".about_frc").mouseenter(function(){
@@ -218,7 +211,7 @@ $(document).ready(function(){
 
     $(".changeeng").mouseleave(function(){
         $(".engmenu_txt").mouseenter(function(){
-            $(".engmenu_txt").css("visibility","visible");
+            $(this).css("visibility","visible");
             $(".frcmenu_txt").css("visibility","hidden");
             $(".usmenu_txt").css("visibility","hidden");
             $(".memmenu_txt").css("visibility","hidden");
@@ -467,25 +460,23 @@ $(document).ready(function(){
         document.documentElement.style.setProperty("--scrollSize",scroll_animation_value+"px");
 
         //logo container
+        var $first_logo = $(".first_logo");
+        var $mingdaologo = $(".mingdaologo");
+        var $logo7130 = $(".logo7130");
         if(truevalue > window.innerHeight * 1.05){
-            $(".first_logo").css("opacity","1");
-            $(".mingdaologo").css("opacity","1");
-            $(".logo7130").css("opacity","1");
-            $(".first_logo").css("padding-top", 0 + "px");
-            $(".mingdaologo").css("padding-right", 8 + "vw");
-            $(".logo7130").css("padding-left", 8 + "vw");
+            $first_logo.css("opacity","1").css("padding-top", 0 + "px");
+            $mingdaologo.css("opacity","1").css("padding-right", 8 + "vw");
+            $logo7130.css("opacity","1").css("padding-left", 8 + "vw");
         }
         else{
-            $(".first_logo").css("opacity","0");
-            $(".mingdaologo").css("opacity","0");
-            $(".logo7130").css("opacity","0");
-            $(".first_logo").css("padding-top", 20 + "vh");
-            $(".mingdaologo").css("padding-right", 30 + "vw");
-            $(".logo7130").css("padding-left", 30 + "vw");
+            $first_logo.css("opacity","0").css("padding-top", 20 + "vh");
+            $mingdaologo.css("opacity","0").css("padding-right", 30 + "vw");
+            $logo7130.css("opacity","0").css("padding-left", 30 + "vw");
         }
         
         //article_first
-        if(truevalue > window.innerHeight * 1.55){
+        
+        if(truevalue > window.innerHeight + window.innerHeight * 0.1){
             $(".first_article").css("right", 0 + "vw");
             $(".article_pic").css("right", 0 + "vw");
             $(".mask").css("right", 0 + "vw");
@@ -505,7 +496,9 @@ $(document).ready(function(){
             $(".paragraph_area").css("left", 50 + "vw");
             $(".lead_link").css("opacity", 0);
         }
-        if(truevalue > window.innerHeight * 2.1){
+        var value2 = window.innerHeight * 1.1 + window.innerWidth * 0.4;
+        console.log(truevalue);
+        if(truevalue > value2){
             $(".k7130_article").css("right", 0 + "vw");
             $(".article_pic2").css("left", 0 + "vw");
             $(".mask2").css("left", 0 + "vw");
@@ -525,7 +518,8 @@ $(document).ready(function(){
             $(".paragraph_area2").css("right", 50 + "vw");
             $(".lead_link2").css("opacity", 0);
         }
-        if(truevalue > window.innerHeight * 2.65){
+        var value3 = value2 + window.innerWidth * 0.4;
+        if(truevalue > value3){
             $(".mem_article").css("right", 0 + "vw");
             $(".article_pic3").css("right", 0 + "vw");
             $(".mask3").css("right", 0 + "vw");
@@ -545,7 +539,8 @@ $(document).ready(function(){
             $(".paragraph_area3").css("left", 50 + "vw");
             $(".lead_link3").css("opacity", 0);
         }
-        if(truevalue > window.innerHeight * 3.2){
+        var value4 = value3 + window.innerWidth * 0.4;
+        if(truevalue > value4){
             $(".contact_article").css("right", 0 + "vw");
             $(".article_pic4").css("left", 0 + "vw");
             $(".mask4").css("left", 0 + "vw");

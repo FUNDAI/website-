@@ -675,7 +675,7 @@ body {
 .content{
     color:white;
     width:100vw;
-    height:200000vw;
+    height:fit-content;
     position:relative;
     z-index: 2;
     display:flex;
@@ -698,6 +698,7 @@ body {
 .first_logo{
     display: block;
     height: 10vw;
+    width: 10vw;
     padding-left: 5vw;
     padding-right: 5vw;
     padding-top: 20vh;
