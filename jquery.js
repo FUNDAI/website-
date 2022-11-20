@@ -9,6 +9,19 @@ window.addEventListener("scroll",function(){
 
 $(document).ready(function(){
     //navbar js
+    var $first_logo = $(".first_logo");
+    var $mingdaologo = $(".mingdaologo");
+    var $logo7130 = $(".logo7130");
+    var $first_article  = $(".first_article");
+    var $article_pic  = $(".article_pic");
+    var $mask  = $(".mask");
+    var $article_title = $(".article_title");
+    var $title_background  = $(".title_background");
+    var $first_article2  = $(".first_article2");
+    var $paragraph_area  = $(".paragraph_area");
+    var $lead_link  = $(".lead_link");
+    var $scroll_ani_pic = $(".scroll_ani_pic");
+    var $scroll_ani_pic_2 = $(".scroll_ani_pic_2");
     $("#home_logo").mouseenter(function(){
         $(".about_frc").css("background-color","hsl(0, 0%, 27%)");
         $(".about_us").css("background-color","hsl(0, 0%, 27%)");
@@ -455,14 +468,12 @@ $(document).ready(function(){
         if(scroll_animation_value > Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)){
             scroll_animation_value = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
         }
-        $(".scroll_ani_pic").css("left" , scroll_animation_value + "px");
-        $(".scroll_ani_pic_2").css("right" , scroll_animation_value + "px");
+        $scroll_ani_pic.css("left" , scroll_animation_value + "px");
+        $scroll_ani_pic_2.css("right" , scroll_animation_value + "px");
         document.documentElement.style.setProperty("--scrollSize",scroll_animation_value+"px");
 
         //logo container
-        var $first_logo = $(".first_logo");
-        var $mingdaologo = $(".mingdaologo");
-        var $logo7130 = $(".logo7130");
+
         if(truevalue > window.innerHeight * 1.05){
             $first_logo.css("opacity","1").css("padding-top", 0 + "px");
             $mingdaologo.css("opacity","1").css("padding-right", 8 + "vw");
@@ -477,14 +488,14 @@ $(document).ready(function(){
         //article_first
         
         if(truevalue > window.innerHeight + window.innerHeight * 0.1){
-            $(".first_article").css("right", 0 + "vw");
-            $(".article_pic").css("right", 0 + "vw");
-            $(".mask").css("right", 0 + "vw");
-            $(".article_title").css("right", 0 + "vw");
-            $(".title_background").css("right", 0 + "vw");
-            $(".first_article2").css("left", 0 + "vw");
-            $(".paragraph_area").css("left", 0 + "vw");
-            $(".lead_link").css("opacity", 1);
+            $first_article.css("right", 0 + "vw");
+            $article_pic.css("right", 0 + "vw");
+            $mask.css("right", 0 + "vw");
+            $article_title.css("right", 0 + "vw");
+            $title_background.css("right", 0 + "vw");
+            $first_article2.css("left", 0 + "vw");
+            $paragraph_area.css("left", 0 + "vw");
+            $lead_link.css("opacity", 1);
         }
         else{
             $(".first_article").css("right", 50 + "vw");
@@ -497,7 +508,6 @@ $(document).ready(function(){
             $(".lead_link").css("opacity", 0);
         }
         var value2 = window.innerHeight * 1.1 + window.innerWidth * 0.4;
-        console.log(truevalue);
         if(truevalue > value2){
             $(".k7130_article").css("right", 0 + "vw");
             $(".article_pic2").css("left", 0 + "vw");
