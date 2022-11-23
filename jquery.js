@@ -6,9 +6,18 @@ window.addEventListener("scroll",function(){
     }
     Parallax.style.top = value * 0.6 + "px";
 })  
+// $(".preload").load(function(){
+//     $(".preload").delay.fadeOut("slow");
+// })
+$(window).on("load", function(){
+    $(".loaded").hide().delay(6700).fadeIn("slow");
+    $(".preload").delay(6500).fadeOut("slow");
+})
 
 $(document).ready(function(){
     //navbar js
+    
+
     var $first_logo = $(".first_logo");
     var $mingdaologo = $(".mingdaologo");
     var $logo7130 = $(".logo7130");

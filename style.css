@@ -1,6 +1,8 @@
 :root{
     font-size:16px;
     --scrollSize:0px;
+    --shadow-color: #FF9E9E;
+    --shadow-color-light: white;
 }
 html {
     scroll-behavior: smooth;
@@ -16,6 +18,124 @@ body {
     width:100vw;
     user-select: none;
 }
+.preload{
+    height: 100vh;
+    width: 100vw;
+    z-index: 10000;
+    position: relative;
+    background-color: rgb(78, 78, 78);
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+}
+.pre7130{
+    height:fit-content;
+    width: fit-content;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    align-items:center;
+    margin: auto;
+    justify-content: center;
+}
+.pretext{
+    font-size: 6vw;
+    text-transform: uppercase;
+    font-family: "Archivo Black", "Archivo", sans-serif;
+    font-weight: normal;
+    letter-spacing: 3vw;
+    display: block;
+    height: auto;
+    text-align: center;
+    text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
+    0 0 3px var(--shadow-color-light), 0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light),
+    0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color), 0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
+}
+.pre7{
+    animation-name: pre7;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-iteration-count: infinite;
+    transition: opacity cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+@keyframes pre7{
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.pre1{
+    animation-name: pre1;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-iteration-count: infinite;
+    transition: opacity cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+@keyframes pre1{
+    0%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.pre3{
+    animation-name: pre3;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-iteration-count: infinite;
+    transition: opacity cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+@keyframes pre3{
+    0%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.pre0{
+    animation-name: pre0;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-iteration-count: infinite;
+    transition: opacity cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+@keyframes pre0{
+    0%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
 #navbar{
     display:grid;
     grid-template-areas: 
