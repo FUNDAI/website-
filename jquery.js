@@ -6,12 +6,19 @@ window.addEventListener("scroll",function(){
     }
     Parallax.style.top = value * 0.6 + "px";
 })  
-// $(".preload").load(function(){
-//     $(".preload").delay.fadeOut("slow");
-// })
+
+$.fn.extend({
+    qcss: function(css) {
+       return $(this).queue(function(next) {
+          $(this).css(css);
+          next();
+       });
+    }
+ });
+
 $(window).on("load", function(){
-    $(".loaded").hide().delay(6700).fadeIn("slow");
-    $(".preload").delay(6500).fadeOut("slow");
+    $(".loaded").hide().delay(6900).fadeIn(850);
+    $(".preload").delay(6500).slideUp(800);
 })
 
 $(document).ready(function(){

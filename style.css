@@ -27,6 +27,8 @@ body {
     display:flex ;
     justify-content: center;
     align-items: center;
+    top:0;
+    transition: right 2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .pre7130{
     height:fit-content;
