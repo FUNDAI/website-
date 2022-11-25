@@ -150,6 +150,7 @@ body {
     clip-path: circle();
     /* why not working bruh */
     filter:drop-shadow(0px 0px 2000px rgb(150, 71, 71));
+    display: none;
 }
 
 #navbar{
