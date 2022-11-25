@@ -19,6 +19,7 @@ $.fn.extend({
 $(window).on("load", function(){
     $(".loaded").hide().delay(6900).fadeIn(850);
     $(".preload").delay(6500).slideUp(800);
+    $(".pre_load_img").hide().delay(1000).fadeIn(2000);
 })
 
 $(document).ready(function(){

@@ -18,6 +18,9 @@ body {
     width:100vw;
     user-select: none;
 }
+::-webkit-scrollbar{
+    width:0;
+}
 .preload{
     height: 100vh;
     width: 100vw;
@@ -45,10 +48,11 @@ body {
     text-transform: uppercase;
     font-family: "Archivo Black", "Archivo", sans-serif;
     font-weight: normal;
-    letter-spacing: 3vw;
+    letter-spacing: 2vw;
     display: block;
     height: auto;
-    text-align: center;
+    text-align: justify;
+    margin-top: 20vh;
     text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
     0 0 3px var(--shadow-color-light), 0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light),
     0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color), 0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
@@ -137,6 +141,16 @@ body {
         opacity: 0;
     }
 }
+.pre_load_img{
+    height:15vw;
+    width: 15vw;
+    position:relative;
+    bottom: 20vh;
+    right:1%;
+    clip-path: circle();
+    /* why not working bruh */
+    filter:drop-shadow(0px 0px 2000px rgb(150, 71, 71));
+}
 
 #navbar{
     display:grid;
@@ -212,7 +226,7 @@ body {
 #home_logo{
     height:5rem;
     width: 5rem;
-    background-image: url(logo1.png);
+    background-image: url(./pic/logo/logo1.png);
     background-size: contain;
     transition:transform 0.2s ease;
     cursor: pointer;
