@@ -25,7 +25,6 @@ $(window).on("load", function(){
 $(document).ready(function(){
     //navbar js
     
-
     var $first_logo = $(".first_logo");
     var $mingdaologo = $(".mingdaologo");
     var $logo7130 = $(".logo7130");
