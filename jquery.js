@@ -38,6 +38,7 @@ $(document).ready(function(){
     var $lead_link  = $(".lead_link");
     var $scroll_ani_pic = $(".scroll_ani_pic");
     var $scroll_ani_pic_2 = $(".scroll_ani_pic_2");
+    var $progress = $("#progressbar");
     $("#home_logo").mouseenter(function(){
         $(".about_frc").css("background-color","hsl(0, 0%, 27%)");
         $(".about_us").css("background-color","hsl(0, 0%, 27%)");
@@ -429,6 +430,10 @@ $(document).ready(function(){
     })
 
      $(window).scroll(function(){
+        var totalheight = document.body.scrollHeight - window.innerHeight;
+        var progressbar = (window.scrollY / totalheight) * 100;
+        $progress.css("height" , progressbar + "%");
+        
         //orgin scroll value
         var origin = $(window).scrollTop();
         var truevalue = origin + window.innerHeight;
