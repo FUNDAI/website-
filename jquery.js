@@ -17,9 +17,12 @@ $.fn.extend({
  });
 
 $(window).on("load", function(){
-    $(".loaded").hide().delay(6900).fadeIn(850);
-    $(".preload").delay(6500).slideUp(800);
-    $(".pre_load_img").hide().delay(1000).fadeIn(2000);
+    var $loaded = $(".loaded");
+    var $preload = $(".preload");
+    var $pre_load_img = $(".pre_load_img")
+    $loaded.hide().delay(6900).fadeIn(850);
+    $preload.delay(6500).slideUp(800);
+    $pre_load_img.hide().delay(1000).fadeIn(2000);
 })
 
 $(document).ready(function(){
@@ -39,6 +42,21 @@ $(document).ready(function(){
     var $scroll_ani_pic = $(".scroll_ani_pic");
     var $scroll_ani_pic_2 = $(".scroll_ani_pic_2");
     var $progress = $("#progressbar");
+    var $logo = $(".logo");
+    var $about_frc = $(".about_frc");
+    var $about_us = $(".about_us");
+    var $members = $(".members");
+    var $contact_us = $(".contact_us");
+    var $changeeng = $(".changeeng");
+    var $space = $(".space");
+    var $animated_7130 = $(".animated_7130");
+    var $n7 = $(".n7")
+    var $n1 = $(".n1")
+    var $n3 = $(".n3")
+    var $n0 = $(".n0")
+    var $home_logo = $("#home_logo")
+    var $navbar = $("#navbar")
+    var $cover = $(".cover")
     $("#home_logo").mouseenter(function(){
         $(".about_frc").css("background-color","hsl(0, 0%, 27%)");
         $(".about_us").css("background-color","hsl(0, 0%, 27%)");
@@ -449,40 +467,38 @@ $(document).ready(function(){
         // $(".loop5").css("top" , value + 'px');
         //navbar shrink js
         if(origin >= window.innerHeight * 0.92){
-            $(".logo").css("height" , 3.625 +"rem");
-            $(".about_frc").css("height" , 3.625 +"rem");
-            $(".about_us").css("height" , 3.625 +"rem");
-            $(".members").css("height" , 3.625 +"rem");
-            $(".contact_us").css("height" , 3.625 +"rem");
-            $(".changeeng").css("height" , 3.625 +"rem");
-            $(".space").css("height" , 3.625 +"rem");
-            $(".animated_7130").css("height" , 3.625 +"rem");
-            $(".n7").css("font-size" , 55 +"px");
-            $(".n1").css("font-size" , 55 +"px");
-            $(".n3").css("font-size" , 55 +"px");
-            $(".n0").css("font-size" , 55 +"px");
-            $("#home_logo").css("height" , 3.5 +"rem");
-            $("#home_logo").css("width" , 3.5 +"rem");
-            $("#navbar").css("grid-template-rows", 0.8 + "fr" , 2 + "fr")
-            $(".cover").css("background-image", "linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(0, 0%, 0%) 0%)")
+            $logo.css("height" , 3.625 +"rem");
+            $about_frc.css("height" , 3.625 +"rem");
+            $about_us.css("height" , 3.625 +"rem");
+            $members.css("height" , 3.625 +"rem");
+            $contact_us.css("height" , 3.625 +"rem");
+            $changeeng.css("height" , 3.625 +"rem");
+            $space.css("height" , 3.625 +"rem");
+            $animated_7130.css("height" , 3.625 +"rem");
+            $n7.css("font-size" , 55 +"px");
+            $n1.css("font-size" , 55 +"px");
+            $n3.css("font-size" , 55 +"px");
+            $n0.css("font-size" , 55 +"px");
+            $home_logo.css("height" , 3.5 +"rem").css("width" , 3.5 +"rem");
+            $navbar.css("grid-template-rows", 0.8 + "fr" , 2 + "fr");
+            $cover.css("background-image", "linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(0, 0%, 0%) 0%)");
         }
         else{
-            $(".logo").css("height" , 5.625 +"rem");
-            $(".about_frc").css("height" , 5.625 +"rem");
-            $(".about_us").css("height" , 5.625 +"rem");
-            $(".members").css("height" , 5.625 +"rem");
-            $(".contact_us").css("height" , 5.625 +"rem");
-            $(".changeeng").css("height" , 5.625 +"rem");
-            $(".space").css("height" , 5.625 +"rem");
-            $(".animated_7130").css("height" , 5.625 +"rem");
-            $(".n7").css("font-size" , 70 +"px");
-            $(".n1").css("font-size" , 70 +"px");
-            $(".n3").css("font-size" ,70 +"px");
-            $(".n0").css("font-size" , 70 +"px");
-            $("#home_logo").css("height" , 5 +"rem");
-            $("#home_logo").css("width" , 5 +"rem");
-            $("#navbar").css("grid-template-rows", 1 + "fr" , 2 + "fr");
-            $(".cover").css("background-image", "linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 0%,hsl(0, 0%, 0%) 0%)");
+            $logo.css("height" , 5.625 +"rem");
+            $about_frc.css("height" , 5.625 +"rem");
+            $about_us.css("height" , 5.625 +"rem");
+            $members.css("height" , 5.625 +"rem");
+            $contact_us.css("height" , 5.625 +"rem");
+            $changeeng.css("height" , 5.625 +"rem");
+            $space.css("height" , 5.625 +"rem");
+            $animated_7130.css("height" , 5.625 +"rem");
+            $n7.css("font-size" , 70 +"px");
+            $n1.css("font-size" , 70 +"px");
+            $n3.css("font-size" ,70 +"px");
+            $n0.css("font-size" , 70 +"px");
+            $home_logo.css("height" , 5 +"rem").css("width" , 5 +"rem");
+            $navbar.css("grid-template-rows", 1 + "fr" , 2 + "fr");
+            $cover.css("background-image", "linear-gradient(to bottom, hsl(193, 65%, 40%) 0%,hsl(193, 65%, 20%) 0%,hsl(0, 0%, 0%) 0%)");
         }
         //scroll animation
         var scroll_animation_value = $(window).scrollTop()*1.5;
