@@ -16,6 +16,8 @@ $.fn.extend({
     }
  });
 
+ 
+
 $(window).on("load", function(){
     var $loaded = $(".loaded");
     var $preload = $(".preload");
@@ -57,48 +59,49 @@ $(document).ready(function(){
     var $home_logo = $("#home_logo")
     var $navbar = $("#navbar")
     var $cover = $(".cover")
-    $("#home_logo").mouseenter(function(){
-        $(".about_frc").css("background-color","hsl(0, 0%, 27%)");
-        $(".about_us").css("background-color","hsl(0, 0%, 27%)");
-        $(".members").css("background-color","hsl(0, 0%, 27%)");
-        $(".contact_us").css("background-color","hsl(0, 0%, 27%)");
-        $(".changeeng").css("background-color","hsl(0, 0%, 27%)");
-        $(".space").css("background-color","hsl(0, 0%, 27%)");
-        $(".animated_7130").css("background-color","hsl(0, 0%, 27%)");
+
+    $home_logo.mouseenter(function(){
+        $about_frc.css("background-color","hsl(0, 0%, 27%)");
+        $about_us.css("background-color","hsl(0, 0%, 27%)");
+        $members.css("background-color","hsl(0, 0%, 27%)");
+        $contact_us.css("background-color","hsl(0, 0%, 27%)");
+        $changeeng.css("background-color","hsl(0, 0%, 27%)");
+        $space.css("background-color","hsl(0, 0%, 27%)");
+        $animated_7130.css("background-color","hsl(0, 0%, 27%)");
     })
-    $("#home_logo").mouseleave(function() {
-        $(".about_frc").css("background-color","rgb(230, 230, 230)");
-        $(".about_us").css("background-color","rgb(230, 230, 230)");
-        $(".members").css("background-color","rgb(230, 230, 230)");
-        $(".contact_us").css("background-color","rgb(230, 230, 230)");
-        $(".changeeng").css("background-color","rgb(230, 230, 230)");
-        $(".space").css("background-color","rgb(230, 230, 230)");
-        $(".animated_7130").css("background-color","rgb(230, 230, 230)");
+    $home_logo.mouseleave(function() {
+        $about_frc.css("background-color","rgb(230, 230, 230)");
+        $about_us.css("background-color","rgb(230, 230, 230)");
+        $members.css("background-color","rgb(230, 230, 230)");
+        $contact_us.css("background-color","rgb(230, 230, 230)");
+        $changeeng.css("background-color","rgb(230, 230, 230)");
+        $space.css("background-color","rgb(230, 230, 230)");
+        $animated_7130.css("background-color","rgb(230, 230, 230)");
     })
     $(".navtext").mouseenter(function(){
-        $(".cover").css("opacity","0.9").css("z-index","5");
+        $cover.css("opacity","0.9").css("z-index","5");
     })
     $(".navtext").mouseleave(function(){
         $(".menu_txt").mouseenter(function(){
-            $(".cover").css("opacity","0.9").css("z-index","5");
+            $cover.css("opacity","0.9").css("z-index","5");
         })
         $(".menu_txt").mouseleave(function(){
-            $(".cover").css("opacity","0").css("z-index","-100");
+            $cover.css("opacity","0").css("z-index","-100");
         })
         $(".space").mouseenter(function(){
-            $(".cover").css("opacity" , "0").css("z-index","-100");
+            $cover.css("opacity" , "0").css("z-index","-100");
         })
         $(".logo").mouseenter(function(){
-            $(".cover").css("opacity" , "0").css("z-index","-100");
+            $cover.css("opacity" , "0").css("z-index","-100");
         })
         $(".space2").mouseenter(function(){
-            $(".cover").css("opacity" , "0").css("z-index","-100");
+            $cover.css("opacity" , "0").css("z-index","-100");
         })
         $(".space3").mouseenter(function(){
-            $(".cover").css("opacity" , "0").css("z-index","-100");
+            $cover.css("opacity" , "0").css("z-index","-100");
         })
     })
-    $(".about_frc").mouseenter(function(){
+    $about_frc.mouseenter(function(){
         $(".about_frc > .navbar_text").css("color","hsl(0, 0%, 3%)");
     })
     $(".about_us").mouseenter(function(){
@@ -113,7 +116,7 @@ $(document).ready(function(){
     $(".changeeng").mouseenter(function(){
         $(".changeeng > .navbar_text").css("color","hsl(0, 0%, 3%)");
     })
-    $(".about_frc").mouseleave(function(){
+    $about_frc.mouseleave(function(){
         $(".about_frc > .navbar_text").css("color","hsl(0, 0%, 60%)");
     })
     $(".about_us").mouseleave(function(){
@@ -130,7 +133,7 @@ $(document).ready(function(){
     })
 
     $("body").mouseleave(function(){
-        $(".cover").css("opacity" , "0");   
+        $cover.css("opacity" , "0");   
         $(".memmenu_txt").css("visibility","hidden");
         $(".frcmenu_txt").css("visibility","hidden");
         $(".usmenu_txt").css("visibility","hidden");
@@ -139,7 +142,7 @@ $(document).ready(function(){
     })
 
     $(".header").mouseleave(function() {
-        $(".cover").css("opacity" , "0");   
+        $cover.css("opacity" , "0");   
         $(".memmenu_txt").css("visibility","hidden");
         $(".frcmenu_txt").css("visibility","hidden");
         $(".usmenu_txt").css("visibility","hidden");
@@ -147,7 +150,7 @@ $(document).ready(function(){
         $(".engmenu_txt").css("visibility","hidden");
     })
     
-    $(".about_frc").mouseenter(function(){
+    $about_frc.mouseenter(function(){
         $(".frcmenu_txt").css("visibility","visible");
         $(".usmenu_txt").css("visibility","hidden");
         $(".memmenu_txt").css("visibility","hidden");
@@ -155,7 +158,7 @@ $(document).ready(function(){
         $(".engmenu_txt").css("visibility","hidden");
         $(".frcmenu").css("z-index","5");
     })
-    $(".about_frc").mouseleave(function(){
+    $about_frc.mouseleave(function(){
         $(".frcmenu_txt").mouseenter(function(){
             $(".frcmenu_txt").css("visibility","visible");
             $(".usmenu_txt").css("visibility","hidden");
@@ -259,7 +262,7 @@ $(document).ready(function(){
 
     $(".changeeng").mouseleave(function(){
         $(".engmenu_txt").mouseenter(function(){
-            $(this).css("visibility","visible");
+            $(".engmenu_txt").css("visibility","visible");
             $(".frcmenu_txt").css("visibility","hidden");
             $(".usmenu_txt").css("visibility","hidden");
             $(".memmenu_txt").css("visibility","hidden");
@@ -278,8 +281,11 @@ $(document).ready(function(){
             $(".engmenu_txt").css("visibility" , "hidden");
             $(".engmenu").css("z-index","-100");
         })
-        
      })
+
+     function randomImg(){
+        var fs = require("fs");
+     }
 
      //content
      $(".article_pic").mouseenter(function(){
