@@ -59,86 +59,82 @@ body {
 }
 .pre7{
     animation-name: pre7;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     animation-iteration-count: infinite;
     transition: opacity cubic-bezier(0.075, 0.82, 0.165, 1);
     animation-fill-mode: forwards;
-    animation-delay: 1s;
     opacity: 0;
 }
 @keyframes pre7{
     0%{
-        opacity: 0;
-    }
-    20%{
         opacity: 1;
     }
-    100%{
+    50%{
         opacity: 0;
+    }
+    100%{
+        opacity: 1;
     }
 }
 .pre1{
     animation-name: pre1;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     animation-iteration-count: infinite;
     transition: opacity cubic-bezier(0.075, 0.82, 0.165, 1);
     animation-fill-mode: forwards;
-    animation-delay: 1s;
     opacity: 0;
 }
 @keyframes pre1{
     0%{
-        opacity: 0;
-    }
-    40%{
         opacity: 1;
     }
-    100%{
+    50%{
         opacity: 0;
+    }
+    100%{
+        opacity: 1;
     }
 }
 .pre3{
     animation-name: pre3;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     animation-iteration-count: infinite;
     transition: opacity cubic-bezier(0.075, 0.82, 0.165, 1);
     animation-fill-mode: forwards;
-    animation-delay: 1s;
     opacity: 0;
 }
 @keyframes pre3{
     0%{
-        opacity: 0;
-    }
-    60%{
         opacity: 1;
     }
-    100%{
+    50%{
         opacity: 0;
+    }
+    100%{
+        opacity: 1;
     }
 }
 .pre0{
     animation-name: pre0;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     animation-iteration-count: infinite;
     transition: opacity cubic-bezier(0.075, 0.82, 0.165, 1);
     animation-fill-mode: forwards;
-    animation-delay: 1s;
     opacity: 0;
 }
 @keyframes pre0{
     0%{
-        opacity: 0;
-    }
-    80%{
         opacity: 1;
     }
-    100%{
+    50%{
         opacity: 0;
+    }
+    100%{
+        opacity: 1;
     }
 }
 .pre_load_img{

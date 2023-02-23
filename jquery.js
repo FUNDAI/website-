@@ -16,15 +16,14 @@ $.fn.extend({
     }
  });
 
- 
 
 $(window).on("load", function(){
     var $loaded = $(".loaded");
     var $preload = $(".preload");
     var $pre_load_img = $(".pre_load_img")
-    $loaded.hide().delay(6900).fadeIn(850);
-    $preload.delay(6500).slideUp(800);
-    $pre_load_img.hide().delay(1000).fadeIn(2000);
+    $loaded.hide().delay(1200).fadeIn(0);
+    $preload.delay(1200).slideUp(980);
+    $pre_load_img.hide().delay(100).fadeIn(800);
 })
 
 $(document).ready(function(){
@@ -541,9 +540,9 @@ $(document).ready(function(){
             $lead_link.css("opacity", 1);
         }
         else{
-            $(".first_article").css("right", 50 + "vw");
-            $(".article_pic").css("right", 50 + "vw");
-            $(".mask").css("right", 50 + "vw");
+            $first_article.css("right", 50 + "vw");
+            $article_pic.css("right", 50 + "vw");
+            $mask.css("right", 50 + "vw");
             $(".article_title").css("right", 170 + "vw");
             $(".title_background").css("right", 200 + "vw");
             $(".first_article2").css("left", 50 + "vw");
