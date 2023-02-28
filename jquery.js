@@ -21,7 +21,7 @@ $(window).on("load", function(){
     var $loaded = $(".loaded");
     var $preload = $(".preload");
     var $pre_load_img = $(".pre_load_img")
-    $loaded.hide().delay(1200).fadeIn(0);
+    $loaded.hide().delay(1250).fadeIn(0);
     $preload.delay(1200).slideUp(980);
     $pre_load_img.hide().delay(100).fadeIn(800);
 })

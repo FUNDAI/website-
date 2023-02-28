@@ -231,7 +231,7 @@ body {
 .navbar_text::after{
     content: "";
     display:block;
-    border-bottom: 3px solid hsl(0, 93%, 71%);
+    border-bottom: 3px solid hsl(229, 93%, 71%);
     transform: scale(0);
     transition: transform 250ms ease-in-out;
     padding:0px;
@@ -613,7 +613,7 @@ body {
 }
 .engmenu_txt::before{
     content: "";
-    border-left: 3px solid hsl(177, 93%, 44%);
+    border-left: 3px solid hsl(61, 93%, 44%);
     opacity: 0;
     transition: opacity 250ms linear;
     padding-left:0px;
