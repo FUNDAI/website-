@@ -7,24 +7,65 @@ window.addEventListener("scroll",function(){
     Parallax.style.top = value * 0.6 + "px";
 })  
 
-$.fn.extend({
-    qcss: function(css) {
-       return $(this).queue(function(next) {
-          $(this).css(css);
-          next();
-       });
-    }
- });
+// $.fn.extend({
+//     qcss: function(css) {
+//        return $(this).queue(function(next) {
+//           $(this).css(css);
+//           next();
+//        });
+//     }
+//  });
 
+// const testFolder = './pic/pic_looper';
+// const fs = require('fs');
 
+// fs.readdir(testFolder, (err, files) => {
+//   files.forEach(file => {
+//     console.log(file);
+//   });
+// });
+window.onload = function () {choosePic();};
+function choosePic(){
+    var myPic = new Array("./pic/pic_looper/1.png","./pic/pic_looper/2.png"
+                         ,"./pic/pic_looper/3.png","./pic/pic_looper/4.png"
+                         ,"./pic/pic_looper/5.png","./pic/pic_looper/6.png"
+                         ,"./pic/pic_looper/7.png","./pic/pic_looper/8.png"
+                         ,"./pic/pic_looper/9.png","./pic/pic_looper/10.png"
+                         ,"./pic/pic_looper/11.png","./pic/pic_looper/12.png"
+                         ,"./pic/pic_looper/13.png","./pic/pic_looper/14.png"
+                         ,"./pic/pic_looper/15.png","./pic/pic_looper/16.png"
+                         ,"./pic/pic_looper/17.png","./pic/pic_looper/18.png"
+                         ,"./pic/pic_looper/19.png","./pic/pic_looper/20.png");
+    var randomNum = Math.floor(Math.random() * myPic.length);
+    $(".loop1").attr("src",myPic[randomNum]);
+    myPic.splice(randomNum,1);
+    var randomNum = Math.floor(Math.random() * myPic.length);
+    $(".loop2").attr("src",myPic[randomNum]);
+    myPic.splice(randomNum,1);
+    var randomNum = Math.floor(Math.random() * myPic.length);
+    $(".loop3").attr("src",myPic[randomNum]);
+    myPic.splice(randomNum,1);
+    var randomNum = Math.floor(Math.random() * myPic.length);
+    $(".loop4").attr("src",myPic[randomNum]);
+    myPic.splice(randomNum,1);
+    var randomNum = Math.floor(Math.random() * myPic.length);
+    $(".loop5").attr("src",myPic[randomNum]);
+    myPic.splice(randomNum,1);
+}
 $(window).on("load", function(){
+    
     var $loaded = $(".loaded");
     var $preload = $(".preload");
     var $pre_load_img = $(".pre_load_img")
-    $loaded.hide().delay(1250).fadeIn(0);
-    $preload.delay(1200).slideUp(980);
+    $loaded.hide().delay(1400).fadeIn(500);
+    $preload.delay(1200).slideUp(1200);
     $pre_load_img.hide().delay(100).fadeIn(800);
+    
 })
+
+// $.getJSON('./pic/pic_looper', data => {
+//     console.log(data); 
+// });
 
 $(document).ready(function(){
     //navbar js
@@ -398,6 +439,32 @@ $(document).ready(function(){
        $(".arrow2_2").css("clip-path"," polygon(100% 0, 100% 3% ,100% 5% , 100% 10% , 100% 20% , 100% 100%, 0% 50%)");
     })
     // 3
+    $(".article_pic3").mouseenter(function(){
+        $(".article_pic3").css("clip-path" , "polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%)"); 
+        $(".mask3").mouseenter(function(){
+            $(".article_pic3").css("clip-path" , "polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%)"); 
+        })
+    })
+
+    $(".pic_link3").mouseenter(function(){
+        $(".article_pic3").css("clip-path" , "polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%)"); 
+        $(".mask3").mouseenter(function(){
+            $(".article_pic3").css("clip-path" , "polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%)"); 
+        })
+    })
+    $(".article_pic3").mouseleave(function(){
+        $(this).css("clip-path" , "polygon(100% 0%,95% 50%,90% 100%,0% 100%,0% 0%)");
+        $(".mask3").mouseleave(function(){
+            $(".article_pic3").css("clip-path" , "polygon(100% 0%,95% 50%,90% 100%,0% 100%,0% 0%)");
+        })  
+    })
+
+    $(".pic_link3").mouseleave(function(){
+        $(".article_pic3").css("clip-path" , "polygon(100% 0%,95% 50%,90% 100%,0% 100%,0% 0%)");
+        $(".mask3").mouseleave(function(){
+            $(".article_pic3").css("clip-path" , "polygon(100% 0%,95% 50%,90% 100%,0% 100%,0% 0%)");
+        })  
+    })
     $(".mem_article").mouseenter(function(){
         $(".mask3").css("box-shadow" , "rgb(100 100 111 / 20%) -20px 20px 29px 10px");  
         $(".paragraph_area3").css("box-shadow" , "rgb(100 100 111 / 20%) 20px 20px 29px 10px");
@@ -425,6 +492,33 @@ $(document).ready(function(){
         $(".arrow2_3").css("clip-path"," polygon(0 0, 0 3% ,0 5% , 0 10% , 0 20% , 0% 100%, 100% 50%)");
      })
     //  4
+    $(".article_pic4").mouseenter(function(){
+        $(this).css("clip-path" , "polygon(100% 0%, 25% 0%, 0% 50%, 25% 100%, 100% 100%)"); 
+        $(".mask4").mouseenter(function(){
+            $(".article_pic4").css("clip-path" , "polygon(100% 0%, 25% 0%, 0% 50%, 25% 100%, 100% 100%)"); 
+        })
+    })
+
+    $(".pic_link4").mouseenter(function(){
+        $(".article_pic4").css("clip-path" , "polygon(100% 0%, 25% 0%, 0% 50%, 25% 100%, 100% 100%)"); 
+        $(".mask4").mouseenter(function(){
+            $(".article_pic4").css("clip-path" , "polygon(100% 0%, 25% 0%, 0% 50%, 25% 100%, 100% 100%)"); 
+        })
+    })
+    
+    $(".article_pic4").mouseleave(function(){
+        $(this).css("clip-path" , "polygon(0% 0%,5% 50%,10% 100%,100% 100%,100% 0%)");
+        $(".mask4").mouseleave(function(){
+            $(".article_pic4").css("clip-path" , "polygon(0% 0%,5% 50%,10% 100%,100% 100%,100% 0%)");
+        })  
+    })
+
+    $(".pic_link4").mouseleave(function(){
+        $(".article_pic4").css("clip-path" , "polygon(0% 0%,5% 50%,10% 100%,100% 100%,100% 0%)");
+        $(".mask4").mouseleave(function(){
+            $(".article_pic4").css("clip-path" , "polygon(0% 0%,5% 50%,10% 100%,100% 100%,100% 0%)");
+        })  
+    })
     $(".contact_article").mouseenter(function(){
         $(".mask4").css("box-shadow" , "rgb(100 100 111 / 20%) 20px 20px 29px 10px");  
         $(".paragraph_area4").css("box-shadow" , "rgb(100 100 111 / 20%) -20px 20px 29px 10px");
@@ -521,15 +615,10 @@ $(document).ready(function(){
             $mingdaologo.css("opacity","1").css("padding-right", 8 + "vw");
             $logo7130.css("opacity","1").css("padding-left", 8 + "vw");
         }
-        else{
-            $first_logo.css("opacity","0").css("padding-top", 20 + "vh");
-            $mingdaologo.css("opacity","0").css("padding-right", 30 + "vw");
-            $logo7130.css("opacity","0").css("padding-left", 30 + "vw");
-        }
         
         //article_first
         
-        if(truevalue > window.innerHeight + window.innerHeight * 0.1){
+        if(truevalue > window.innerHeight + window.innerHeight * 0.4){
             $first_article.css("right", 0 + "vw");
             $article_pic.css("right", 0 + "vw");
             $mask.css("right", 0 + "vw");
@@ -539,17 +628,17 @@ $(document).ready(function(){
             $paragraph_area.css("left", 0 + "vw");
             $lead_link.css("opacity", 1);
         }
-        else{
-            $first_article.css("right", 50 + "vw");
-            $article_pic.css("right", 50 + "vw");
-            $mask.css("right", 50 + "vw");
-            $(".article_title").css("right", 170 + "vw");
-            $(".title_background").css("right", 200 + "vw");
-            $(".first_article2").css("left", 50 + "vw");
-            $(".paragraph_area").css("left", 50 + "vw");
-            $(".lead_link").css("opacity", 0);
-        }
-        var value2 = window.innerHeight * 1.1 + window.innerWidth * 0.4;
+        // else{
+        //     $first_article.css("right", 50 + "vw");
+        //     $article_pic.css("right", 50 + "vw");
+        //     $mask.css("right", 50 + "vw");
+        //     $(".article_title").css("right", 170 + "vw");
+        //     $(".title_background").css("right", 200 + "vw");
+        //     $(".first_article2").css("left", 50 + "vw");
+        //     $(".paragraph_area").css("left", 50 + "vw");
+        //     $(".lead_link").css("opacity", 0);
+        // }
+        var value2 = window.innerHeight * 1.1 + window.innerWidth * 0.45;
         if(truevalue > value2){
             $(".k7130_article").css("right", 0 + "vw");
             $(".article_pic2").css("left", 0 + "vw");
@@ -560,17 +649,17 @@ $(document).ready(function(){
             $(".paragraph_area2").css("right", 0 + "vw");
             $(".lead_link2").css("opacity", 1);
         }
-        else{
-            $(".k7130_article").css("right", 50 + "vw");
-            $(".article_pic2").css("left", 50 + "vw");
-            $(".mask2").css("left", 50 + "vw");
-            $(".article_title2").css("left", 170 + "vw");
-            $(".title_background2").css("left", 200 + "vw");
-            $(".k7130_article2").css("left", 50 + "vw");
-            $(".paragraph_area2").css("right", 50 + "vw");
-            $(".lead_link2").css("opacity", 0);
-        }
-        var value3 = value2 + window.innerWidth * 0.4;
+        // else{
+        //     $(".k7130_article").css("right", 50 + "vw");
+        //     $(".article_pic2").css("left", 50 + "vw");
+        //     $(".mask2").css("left", 50 + "vw");
+        //     $(".article_title2").css("left", 170 + "vw");
+        //     $(".title_background2").css("left", 200 + "vw");
+        //     $(".k7130_article2").css("left", 50 + "vw");
+        //     $(".paragraph_area2").css("right", 50 + "vw");
+        //     $(".lead_link2").css("opacity", 0);
+        // }
+        var value3 = value2 + window.innerWidth * 0.45;
         if(truevalue > value3){
             $(".mem_article").css("right", 0 + "vw");
             $(".article_pic3").css("right", 0 + "vw");
@@ -581,16 +670,16 @@ $(document).ready(function(){
             $(".paragraph_area3").css("left", 0 + "vw");
             $(".lead_link3").css("opacity", 1);
         }
-        else{
-            $(".mem_article3").css("right", 50 + "vw");
-            $(".article_pic3").css("right", 50 + "vw");
-            $(".mask3").css("right", 50 + "vw");
-            $(".article_title3").css("right", 170 + "vw");
-            $(".title_background3").css("right", 200 + "vw");
-            $(".mem_article2").css("left", 50 + "vw");
-            $(".paragraph_area3").css("left", 50 + "vw");
-            $(".lead_link3").css("opacity", 0);
-        }
+        // else{
+        //     $(".mem_article3").css("right", 50 + "vw");
+        //     $(".article_pic3").css("right", 50 + "vw");
+        //     $(".mask3").css("right", 50 + "vw");
+        //     $(".article_title3").css("right", 170 + "vw");
+        //     $(".title_background3").css("right", 200 + "vw");
+        //     $(".mem_article2").css("left", 50 + "vw");
+        //     $(".paragraph_area3").css("left", 50 + "vw");
+        //     $(".lead_link3").css("opacity", 0);
+        // }
         var value4 = value3 + window.innerWidth * 0.4;
         if(truevalue > value4){
             $(".contact_article").css("right", 0 + "vw");
@@ -602,16 +691,16 @@ $(document).ready(function(){
             $(".paragraph_area4").css("right", 0 + "vw");
             $(".lead_link4").css("opacity", 1);
         }
-        else{
-            $(".contact_article").css("right", 50 + "vw");
-            $(".article_pic4").css("left", 50 + "vw");
-            $(".mask4").css("left", 50 + "vw");
-            $(".article_title4").css("left", 170 + "vw");
-            $(".title_background4").css("left", 200 + "vw");
-            $(".contact_article2").css("left", 50 + "vw");
-            $(".paragraph_area4").css("right", 50 + "vw");
-            $(".lead_link4").css("opacity", 0);
-        }
+        // else{
+        //     $(".contact_article").css("right", 50 + "vw");
+        //     $(".article_pic4").css("left", 50 + "vw");
+        //     $(".mask4").css("left", 50 + "vw");
+        //     $(".article_title4").css("left", 170 + "vw");
+        //     $(".title_background4").css("left", 200 + "vw");
+        //     $(".contact_article2").css("left", 50 + "vw");
+        //     $(".paragraph_area4").css("right", 50 + "vw");
+        //     $(".lead_link4").css("opacity", 0);
+        // }
         
      })
 });
