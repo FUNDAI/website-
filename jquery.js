@@ -26,16 +26,16 @@ window.addEventListener("scroll",function(){
 // });
 window.onload = function () {choosePic();};
 function choosePic(){
-    var myPic = new Array("./pic/pic_looper/1.png","./pic/pic_looper/2.png"
-                         ,"./pic/pic_looper/3.png","./pic/pic_looper/4.png"
-                         ,"./pic/pic_looper/5.png","./pic/pic_looper/6.png"
-                         ,"./pic/pic_looper/7.png","./pic/pic_looper/8.png"
-                         ,"./pic/pic_looper/9.png","./pic/pic_looper/10.png"
-                         ,"./pic/pic_looper/11.png","./pic/pic_looper/12.png"
-                         ,"./pic/pic_looper/13.png","./pic/pic_looper/14.png"
-                         ,"./pic/pic_looper/15.png","./pic/pic_looper/16.png"
-                         ,"./pic/pic_looper/17.png","./pic/pic_looper/18.png"
-                         ,"./pic/pic_looper/19.png","./pic/pic_looper/20.png");
+    var myPic = new Array("./pic/pic_looper/1.webp","./pic/pic_looper/2.webp"
+                         ,"./pic/pic_looper/3.webp","./pic/pic_looper/4.webp"
+                         ,"./pic/pic_looper/5.webp","./pic/pic_looper/6.webp"
+                         ,"./pic/pic_looper/7.webp","./pic/pic_looper/8.webp"
+                         ,"./pic/pic_looper/9.webp","./pic/pic_looper/10.webp"
+                         ,"./pic/pic_looper/11.webp","./pic/pic_looper/12.webp"
+                         ,"./pic/pic_looper/13.webp","./pic/pic_looper/14.webp"
+                         ,"./pic/pic_looper/15.webp","./pic/pic_looper/16.webp"
+                         ,"./pic/pic_looper/17.webp","./pic/pic_looper/18.webp"
+                         ,"./pic/pic_looper/19.webp","./pic/pic_looper/20.webp");
     var randomNum = Math.floor(Math.random() * myPic.length);
     $(".loop1").attr("src",myPic[randomNum]);
     myPic.splice(randomNum,1);
@@ -53,12 +53,12 @@ function choosePic(){
     myPic.splice(randomNum,1);
 }
 $(window).on("load", function(){
-    
+    choosePic();
     var $loaded = $(".loaded");
     var $preload = $(".preload");
     var $pre_load_img = $(".pre_load_img")
     $loaded.hide().delay(1400).fadeIn(500);
-    $preload.delay(1200).slideUp(1200);
+    $preload.delay(1200).slideUp(2000);
     $pre_load_img.hide().delay(100).fadeIn(800);
     
 })
