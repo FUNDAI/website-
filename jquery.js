@@ -39,16 +39,16 @@ function choosePic(){
     var randomNum = Math.floor(Math.random() * myPic.length);
     $(".loop1").attr("src",myPic[randomNum]);
     myPic.splice(randomNum,1);
-    var randomNum = Math.floor(Math.random() * myPic.length);
+    randomNum = Math.floor(Math.random() * myPic.length);
     $(".loop2").attr("src",myPic[randomNum]);
     myPic.splice(randomNum,1);
-    var randomNum = Math.floor(Math.random() * myPic.length);
+    randomNum = Math.floor(Math.random() * myPic.length);
     $(".loop3").attr("src",myPic[randomNum]);
     myPic.splice(randomNum,1);
-    var randomNum = Math.floor(Math.random() * myPic.length);
+    randomNum = Math.floor(Math.random() * myPic.length);
     $(".loop4").attr("src",myPic[randomNum]);
     myPic.splice(randomNum,1);
-    var randomNum = Math.floor(Math.random() * myPic.length);
+    randomNum = Math.floor(Math.random() * myPic.length);
     $(".loop5").attr("src",myPic[randomNum]);
     myPic.splice(randomNum,1);
 }
